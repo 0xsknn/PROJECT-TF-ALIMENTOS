@@ -5,21 +5,21 @@ import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 const productImages = [
   {
     id: 1,
-    src: "/images/arrozcasca.jpg",
-    thumbnail: "/images/arrozcasca.jpg",
-    alt: "Arroz com Casca - Vista Geral"
+    src: "/images/arroz1111.webp",
+    thumbnail: "/images/arroz1111.webp",
+    alt: "Arroz com Casca - Na Mão"
   },
   {
     id: 2,
-    src: "/images/Casca-de-arroz-caida.webp",
-    thumbnail: "/images/Casca-de-arroz-caida.webp",
-    alt: "Arroz com Casca - Detalhe"
+    src: "/images/arroz222.webp",
+    thumbnail: "/images/arroz222.webp",
+    alt: "Arroz com Casca - Em Quantidade"
   },
   {
     id: 3,
-    src: "/images/culitvoarroz.jpg",
-    thumbnail: "/images/culitvoarroz.jpg",
-    alt: "Arroz com Casca - Plantação"
+    src: "/images/arroz3333.jpg",
+    thumbnail: "/images/arroz3333.jpg",
+    alt: "Arroz com Casca - Detalhe Próximo"
   },
   {
     id: 4,
