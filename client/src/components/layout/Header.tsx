@@ -69,10 +69,7 @@ const Header = () => {
               Sobre Nós
             </Link>
             
-            <Link href="/blog" className={`font-heading font-semibold ${isActive('/blog') ? 'text-primary border-b-2 border-primary' : 'hover:text-primary'}`}>
-              Blog
-            </Link>
-            
+
             <Link href="/qualidade" className={`font-heading font-semibold ${isActive('/qualidade') ? 'text-primary border-b-2 border-primary' : 'hover:text-primary'}`}>
               Centro de Qualidade
             </Link>
@@ -119,10 +116,7 @@ const Header = () => {
               Sobre Nós
             </Link>
             
-            <Link href="/blog" className={`block py-2 font-heading font-semibold ${isActive('/blog') ? 'text-primary' : 'hover:text-primary'}`}>
-              Blog
-            </Link>
-            
+
             <Link href="/qualidade" className={`block py-2 font-heading font-semibold ${isActive('/qualidade') ? 'text-primary' : 'hover:text-primary'}`}>
               Centro de Qualidade
             </Link>

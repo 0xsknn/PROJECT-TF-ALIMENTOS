@@ -73,11 +73,7 @@ const Footer = () => {
                   <ChevronRight className="h-4 w-4 mr-2" /> Centro de Qualidade
                 </Link>
               </li>
-              <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-2" /> Blog
-                </Link>
-              </li>
+
               <li>
                 <Link href="/contato" className="text-gray-400 hover:text-white transition flex items-center">
                   <ChevronRight className="h-4 w-4 mr-2" /> Contato
