@@ -78,23 +78,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                 </div>
               </div>
               
-              <div className="mb-8">
-                <h3 className="font-heading font-semibold text-lg mb-3">Disponibilidade</h3>
-                <div className="flex flex-wrap gap-2">
-                  <div className="bg-white border border-primary rounded-md px-4 py-2 text-primary font-semibold">
-                    25kg
-                  </div>
-                  <div className="bg-white border border-primary rounded-md px-4 py-2 text-primary font-semibold">
-                    50kg
-                  </div>
-                  <div className="bg-white border border-primary rounded-md px-4 py-2 text-primary font-semibold">
-                    Big Bag 1000kg
-                  </div>
-                  <div className="bg-white border border-primary rounded-md px-4 py-2 text-primary font-semibold">
-                    Granel
-                  </div>
-                </div>
-              </div>
+
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contato">
@@ -143,9 +127,10 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                   <div className="lg:col-span-2">
                     <h3 className="font-heading font-semibold text-xl mb-4">Sobre o Produto</h3>
                     <p className="mb-4">
-                      Nosso arroz beneficiado tipo 1 é um produto premium, resultado de cuidadoso processo de cultivo e 
-                      beneficiamento. O processo de beneficiamento inclui as etapas de limpeza, descascamento, brunimento, 
-                      polimento e classificação, garantindo grãos uniformes e de alta qualidade.
+                      Nosso arroz com casca é um produto premium, resultado de cuidadoso processo de cultivo. 
+                      Mantido em sua forma natural com a casca protetora intacta, este produto serve como 
+                      matéria-prima para diversos processos na indústria de alimentos e pode ser armazenado 
+                      por períodos mais longos.
                     </p>
                     <p className="mb-4">
                       Cultivado em terras férteis e com controle rigoroso de temperatura e umidade, nosso arroz apresenta 
@@ -162,7 +147,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                        <span>Alto rendimento após o cozimento</span>
+                        <span>Alta qualidade de grãos integrais</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="text-primary mr-2 mt-1 h-5 w-5" />
@@ -170,7 +155,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                       </li>
                       <li className="flex items-start">
                         <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                        <span>Grãos uniformes e soltos após o preparo</span>
+                        <span>Excelente para armazenamento prolongado</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="text-primary mr-2 mt-1 h-5 w-5" />
@@ -269,7 +254,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
               <TabsContent value="applications">
                 <h3 className="font-heading font-semibold text-xl mb-4">Aplicações e Usos</h3>
                 <p className="mb-6">
-                  O arroz beneficiado tipo 1 é versátil e pode ser utilizado em diversas aplicações na indústria alimentícia e no varejo:
+                  O arroz com casca é versátil e pode ser utilizado em diversas aplicações na indústria alimentícia após processamento:
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -283,10 +268,10 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </div>
                     <h4 className="font-heading font-semibold text-lg mb-2">Indústria Alimentícia</h4>
                     <ul className="space-y-2">
-                      <li>• Refeições prontas congeladas</li>
-                      <li>• Produção de cereais matinais</li>
-                      <li>• Farinha de arroz para panificação</li>
-                      <li>• Alimentos infantis</li>
+                      <li>• Beneficiamento para arroz branco</li>
+                      <li>• Produção de arroz integral</li>
+                      <li>• Matéria-prima para alimentos processados</li>
+                      <li>• Fabricação de produtos derivados</li>
                     </ul>
                   </div>
                   
@@ -302,10 +287,10 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </div>
                     <h4 className="font-heading font-semibold text-lg mb-2">Varejo e Distribuição</h4>
                     <ul className="space-y-2">
-                      <li>• Empacotamento para venda direta</li>
-                      <li>• Redes de supermercados</li>
-                      <li>• Distribuidores de alimentos</li>
-                      <li>• Mercados institucionais</li>
+                      <li>• Venda para indústrias de beneficiamento</li>
+                      <li>• Fornecimento a distribuidores</li>
+                      <li>• Exportação para mercados externos</li>
+                      <li>• Cooperativas agrícolas</li>
                     </ul>
                   </div>
                   
@@ -319,12 +304,12 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                         <path d="M12 12v5" />
                       </svg>
                     </div>
-                    <h4 className="font-heading font-semibold text-lg mb-2">Food Service</h4>
+                    <h4 className="font-heading font-semibold text-lg mb-2">Outros Usos</h4>
                     <ul className="space-y-2">
-                      <li>• Restaurantes comerciais</li>
-                      <li>• Cozinhas industriais</li>
-                      <li>• Hospitais e escolas</li>
-                      <li>• Catering para eventos</li>
+                      <li>• Armazenamento antes do processamento</li>
+                      <li>• Plantio para agricultura</li>
+                      <li>• Pesquisa e desenvolvimento de novas variedades</li>
+                      <li>• Produção de sementes</li>
                     </ul>
                   </div>
                 </div>
