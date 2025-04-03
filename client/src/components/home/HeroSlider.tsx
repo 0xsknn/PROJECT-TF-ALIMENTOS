@@ -15,7 +15,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    imageUrl: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1536054389888-5987d140df2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=600&q=80",
     title: "Qualidade em Grãos para sua Indústria",
     description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
     buttonText: "Conheça Nossos Produtos",
@@ -23,7 +23,7 @@ const slides: Slide[] = [
   },
   {
     id: 2,
-    imageUrl: "https://images.unsplash.com/photo-1536657464919-892534f60d6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1606760626125-46268743606e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=600&q=80",
     title: "Compromisso com a Agricultura Responsável",
     description: "Produção sustentável com respeito ao meio ambiente e às comunidades locais",
     buttonText: "Nossa Sustentabilidade",
@@ -31,7 +31,7 @@ const slides: Slide[] = [
   },
   {
     id: 3,
-    imageUrl: "https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=600&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1574323347407-f5e1a5a9b47a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=600&q=80",
     title: "Tecnologia e Tradição no Campo",
     description: "Combinamos métodos tradicionais com tecnologia de ponta para oferecer o melhor",
     buttonText: "Nosso Processo",
