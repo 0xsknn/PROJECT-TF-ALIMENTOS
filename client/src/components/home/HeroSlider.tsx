@@ -15,7 +15,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    imageUrl: "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
+    imageUrl: "https://images.pexels.com/photos/1459331/pexels-photo-1459331.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
     title: "Qualidade em Grãos para sua Indústria",
     description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
     buttonText: "Conheça Nossos Produtos",
@@ -23,7 +23,7 @@ const slides: Slide[] = [
   },
   {
     id: 2,
-    imageUrl: "https://images.pexels.com/photos/4412924/pexels-photo-4412924.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
+    imageUrl: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
     title: "Compromisso com a Agricultura Responsável",
     description: "Produção sustentável com respeito ao meio ambiente e às comunidades locais",
     buttonText: "Nossa Sustentabilidade",
