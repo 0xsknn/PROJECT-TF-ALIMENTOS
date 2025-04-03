@@ -11,7 +11,7 @@ const AboutHero = () => {
             </h1>
             <p className="text-gray-600 mb-6">
               A TF Alimentos nasceu da paixão pela agricultura e do compromisso com a qualidade. 
-              Há mais de 20 anos, nos dedicamos ao cultivo, beneficiamento e comercialização de grãos premium 
+              Há mais de 5 anos, nos dedicamos ao cultivo, beneficiamento e comercialização de grãos premium 
               para indústrias e distribuidores em todo o Brasil.
             </p>
             <p className="text-gray-600 mb-6">
@@ -24,7 +24,7 @@ const AboutHero = () => {
                   <Medal className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-semibold">20+</h4>
+                  <h4 className="font-heading font-semibold">5+</h4>
                   <p className="text-gray-600 text-sm">Anos de Experiência</p>
                 </div>
               </div>

@@ -2,21 +2,6 @@ import { Product } from "@shared/schema";
 
 export const mockProducts: Product[] = [
   {
-    id: 1,
-    name: "Arroz Beneficiado",
-    slug: "arroz-beneficiado",
-    description: "Arroz tipo 1, longo fino, safra 2023. Produção própria com baixo índice de impurezas e alto rendimento. Cultivado em terras férteis com controle rigoroso de temperatura e umidade para garantir a melhor qualidade.",
-    shortDescription: "Arroz tipo 1, longo fino, safra 2023. Produção própria com baixo índice de impurezas.",
-    category: "arroz",
-    imageUrl: "/images/arroz2.png",
-    isAvailable: true,
-    isHighlighted: true,
-    moisture: "13%",
-    impurity: "0.5%",
-    ph: "6.8",
-    createdAt: new Date().toISOString()
-  },
-  {
     id: 2,
     name: "Soja Grão",
     slug: "soja-grao",
@@ -35,30 +20,15 @@ export const mockProducts: Product[] = [
     id: 3,
     name: "Arroz com Casca",
     slug: "arroz-com-casca",
-    description: "Arroz com casca de alta qualidade, utilizado como matéria-prima para diversos produtos e subprodutos. Pode ser processado para obtenção de arroz integral, branco ou parboilizado conforme a necessidade da indústria.",
+    description: "Arroz com casca de alta qualidade, utilizado como matéria-prima para diversos produtos e subprodutos. Pode ser processado para obtenção de outros tipos de arroz conforme a necessidade da indústria.",
     shortDescription: "Arroz com casca de alta qualidade, matéria-prima para diversos produtos e subprodutos da indústria alimentícia.",
     category: "arroz",
     imageUrl: "/images/arrozcasca.jpg",
-    isAvailable: false,
+    isAvailable: true,
     isHighlighted: true,
     moisture: "12.5%",
     impurity: "0.8%",
     ph: "6.9",
-    createdAt: new Date().toISOString()
-  },
-  {
-    id: 4,
-    name: "Arroz Parboilizado",
-    slug: "arroz-parboilizado",
-    description: "Arroz parboilizado tipo 1, longo, beneficiado por processo especial de pré-cozimento. Preserva mais nutrientes que o arroz polido comum e apresenta coloração amarelada característica.",
-    shortDescription: "Tipo 1, longo fino, safra 2023. Pré-cozido para melhor conservação de nutrientes.",
-    category: "arroz",
-    imageUrl: "https://images.pexels.com/photos/4110473/pexels-photo-4110473.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
-    isAvailable: true,
-    isHighlighted: false,
-    moisture: "12%",
-    impurity: "0.6%",
-    ph: "6.7",
     createdAt: new Date().toISOString()
   },
   {
@@ -74,21 +44,6 @@ export const mockProducts: Product[] = [
     moisture: "13.5%",
     impurity: "0.9%",
     ph: "6.6",
-    createdAt: new Date().toISOString()
-  },
-  {
-    id: 6,
-    name: "Arroz Orgânico",
-    slug: "arroz-organico",
-    description: "Arroz orgânico certificado, cultivado sem o uso de agrotóxicos ou fertilizantes químicos. Respeita o meio ambiente e promove a agricultura sustentável, com sabor puro e autêntico.",
-    shortDescription: "Cultivado sem agrotóxicos ou fertilizantes químicos. Certificação orgânica.",
-    category: "arroz",
-    imageUrl: "https://images.pexels.com/photos/7345444/pexels-photo-7345444.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
-    isAvailable: false,
-    isHighlighted: false,
-    moisture: "13%",
-    impurity: "0.7%",
-    ph: "7.0",
     createdAt: new Date().toISOString()
   }
 ];
