@@ -38,7 +38,7 @@ export const mockProducts: Product[] = [
     description: "Arroz com casca de alta qualidade, utilizado como matéria-prima para diversos produtos e subprodutos. Pode ser processado para obtenção de arroz integral, branco ou parboilizado conforme a necessidade da indústria.",
     shortDescription: "Arroz com casca de alta qualidade, matéria-prima para diversos produtos e subprodutos da indústria alimentícia.",
     category: "arroz",
-    imageUrl: "/images/Casca-de-arroz-caida.webp",
+    imageUrl: "/images/arrozcasca.jpg",
     isAvailable: false,
     isHighlighted: true,
     moisture: "12.5%",
