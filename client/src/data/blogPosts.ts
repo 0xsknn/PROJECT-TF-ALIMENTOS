@@ -173,7 +173,7 @@ export const mockBlogPosts: BlogPost[] = [
       
       <p>O arroz orgânico representa não apenas uma alternativa mais sustentável de produção, mas também uma oportunidade de agregar valor à produção e acessar mercados diferenciados. Com planejamento adequado e assistência técnica especializada, a conversão para o sistema orgânico pode trazer benefícios ambientais, nutricionais e econômicos significativos.</p>
     `,
-    imageUrl: "https://images.pexels.com/photos/4117839/pexels-photo-4117839.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&dpr=1",
+    imageUrl: "/images/culitvoarroz.jpg",
     createdAt: "2023-07-15T11:45:00.000Z"
   },
   {
