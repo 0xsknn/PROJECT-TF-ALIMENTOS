@@ -1,8 +1,6 @@
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import AboutHero from "@/components/about/AboutHero";
 import CompanyValues from "@/components/about/CompanyValues";
-import CompanyTimeline from "@/components/about/CompanyTimeline";
-import TeamSection from "@/components/about/TeamSection";
 import ContactCTA from "@/components/home/ContactCTA";
 
 const About = () => {
@@ -16,8 +14,6 @@ const About = () => {
       />
       <AboutHero />
       <CompanyValues />
-      <CompanyTimeline />
-      <TeamSection />
       <ContactCTA />
     </div>
   );
