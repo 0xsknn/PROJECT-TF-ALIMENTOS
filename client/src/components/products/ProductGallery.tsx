@@ -5,27 +5,27 @@ import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 const productImages = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1586201375761-83865001e8ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=800&q=80",
-    thumbnail: "https://images.unsplash.com/photo-1586201375761-83865001e8ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80",
-    alt: "Arroz Beneficiado - Vista 1"
+    src: "/images/arrozcasca.jpg",
+    thumbnail: "/images/arrozcasca.jpg",
+    alt: "Arroz com Casca - Vista Geral"
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1455480045400-8068e1c49228?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=800&q=80",
-    thumbnail: "https://images.unsplash.com/photo-1455480045400-8068e1c49228?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80",
-    alt: "Arroz Beneficiado - Vista 2"
+    src: "/images/Casca-de-arroz-caida.webp",
+    thumbnail: "/images/Casca-de-arroz-caida.webp",
+    alt: "Arroz com Casca - Detalhe"
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1604709378632-83e1580fae47?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=800&q=80",
-    thumbnail: "https://images.unsplash.com/photo-1604709378632-83e1580fae47?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80",
-    alt: "Arroz Beneficiado - Vista 3"
+    src: "/images/culitvoarroz.jpg",
+    thumbnail: "/images/culitvoarroz.jpg",
+    alt: "Arroz com Casca - Plantação"
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1550828520-4cb496926fc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=800&q=80",
-    thumbnail: "https://images.unsplash.com/photo-1550828520-4cb496926fc9?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=200&q=80",
-    alt: "Arroz Beneficiado - Embalagem"
+    src: "/images/arroz2.png",
+    thumbnail: "/images/arroz2.png",
+    alt: "Arroz - Produção"
   }
 ];
 
