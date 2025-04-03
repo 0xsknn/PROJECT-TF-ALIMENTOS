@@ -94,18 +94,8 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/produtos/arroz-beneficiado" className="text-gray-400 hover:text-white transition flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-2" /> Arroz Beneficiado
-                </Link>
-              </li>
-              <li>
-                <Link href="/produtos/arroz-integral" className="text-gray-400 hover:text-white transition flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-2" /> Arroz Integral
-                </Link>
-              </li>
-              <li>
-                <Link href="/produtos/arroz-parboilizado" className="text-gray-400 hover:text-white transition flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-2" /> Arroz Parboilizado
+                <Link href="/produtos/arroz-com-casca" className="text-gray-400 hover:text-white transition flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" /> Arroz com Casca
                 </Link>
               </li>
               <li>
