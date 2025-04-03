@@ -15,7 +15,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    imageUrl: "https://images.pexels.com/photos/1459331/pexels-photo-1459331.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
+    imageUrl: "https://images.pexels.com/photos/5528994/pexels-photo-5528994.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
     title: "Qualidade em Grãos para sua Indústria",
     description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
     buttonText: "Conheça Nossos Produtos",
