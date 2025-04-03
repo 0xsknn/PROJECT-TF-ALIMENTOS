@@ -54,13 +54,10 @@ const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <Link href="/produtos/arroz" className="w-full">Arroz</Link>
+                  <Link href="/produtos/arroz-com-casca" className="w-full">Arroz com Casca</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="/produtos/soja" className="w-full">Soja</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link href="/produtos/outros-graos" className="w-full">Outros Grãos</Link>
+                  <Link href="/produtos/soja-grao" className="w-full">Soja Grão</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -99,14 +96,11 @@ const Header = () => {
               
               {mobileDropdownOpen && (
                 <div className="pl-4 py-1">
-                  <Link href="/produtos/arroz" className="block py-2 hover:text-primary">
-                    Arroz
+                  <Link href="/produtos/arroz-com-casca" className="block py-2 hover:text-primary">
+                    Arroz com Casca
                   </Link>
-                  <Link href="/produtos/soja" className="block py-2 hover:text-primary">
-                    Soja
-                  </Link>
-                  <Link href="/produtos/outros-graos" className="block py-2 hover:text-primary">
-                    Outros Grãos
+                  <Link href="/produtos/soja-grao" className="block py-2 hover:text-primary">
+                    Soja Grão
                   </Link>
                 </div>
               )}

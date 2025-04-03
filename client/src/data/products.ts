@@ -30,20 +30,5 @@ export const mockProducts: Product[] = [
     impurity: "0.8%",
     ph: "6.9",
     createdAt: new Date().toISOString()
-  },
-  {
-    id: 5,
-    name: "Soja Não Transgênica",
-    slug: "soja-nao-transgenica",
-    description: "Soja certificada como não transgênica, cultivada sem modificação genética e com práticas sustentáveis. Rastreabilidade completa desde o plantio até a colheita.",
-    shortDescription: "Soja certificada como não transgênica, com rastreabilidade completa.",
-    category: "soja",
-    imageUrl: "https://images.pexels.com/photos/2868911/pexels-photo-2868911.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=1",
-    isAvailable: true,
-    isHighlighted: false,
-    moisture: "13.5%",
-    impurity: "0.9%",
-    ph: "6.6",
-    createdAt: new Date().toISOString()
   }
 ];
