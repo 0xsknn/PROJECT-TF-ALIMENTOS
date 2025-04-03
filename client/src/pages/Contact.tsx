@@ -1,0 +1,327 @@
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest, queryClient } from "@/lib/queryClient";
+import { insertContactSubmissionSchema } from "@shared/schema";
+import { useToast } from "@/hooks/use-toast";
+
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+
+// Extend the schema with additional validation
+const contactFormSchema = insertContactSubmissionSchema.extend({
+  name: z.string().min(3, {
+    message: "O nome deve ter pelo menos 3 caracteres.",
+  }),
+  email: z.string().email({
+    message: "Por favor, informe um email válido.",
+  }),
+  phone: z.string().min(8, {
+    message: "Por favor, informe um telefone válido.",
+  }).optional(),
+  message: z.string().min(10, {
+    message: "A mensagem deve ter pelo menos 10 caracteres.",
+  }),
+});
+
+type ContactFormValues = z.infer<typeof contactFormSchema>;
+
+const Contact = () => {
+  const { toast } = useToast();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Define the form
+  const form = useForm<ContactFormValues>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
+  });
+
+  // Define the mutation
+  const mutation = useMutation({
+    mutationFn: (values: ContactFormValues) => {
+      return apiRequest("POST", "/api/contact", values);
+    },
+    onSuccess: () => {
+      toast({
+        title: "Mensagem enviada com sucesso!",
+        description: "Entraremos em contato em breve.",
+        variant: "default",
+      });
+      setIsSubmitted(true);
+      // Reset the form
+      form.reset();
+      // Invalidate queries to refresh data
+      queryClient.invalidateQueries({ queryKey: ["/api/contact"] });
+    },
+    onError: (error) => {
+      toast({
+        title: "Erro ao enviar mensagem",
+        description: "Por favor, tente novamente mais tarde.",
+        variant: "destructive",
+      });
+      console.error("Error submitting contact form:", error);
+    },
+  });
+
+  // Define form submission handler
+  function onSubmit(values: ContactFormValues) {
+    mutation.mutate(values);
+  }
+
+  return (
+    <div>
+      <Breadcrumbs
+        items={[
+          { label: "Início", href: "/" },
+          { label: "Contato" },
+        ]}
+      />
+
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h1 className="font-heading font-bold text-3xl md:text-5xl mb-4">
+            Entre em Contato
+          </h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Estamos à disposição para responder suas dúvidas, receber feedback ou discutir oportunidades de negócio.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="lg:col-span-2">
+            <Card>
+              <CardContent className="p-8">
+                <h2 className="font-heading font-bold text-2xl mb-6">Envie uma Mensagem</h2>
+                
+                {isSubmitted ? (
+                  <div className="bg-green-50 border border-green-200 text-green-800 rounded-lg p-6 text-center">
+                    <h3 className="font-heading font-semibold text-xl mb-2">Mensagem Enviada!</h3>
+                    <p>Agradecemos seu contato. Nossa equipe retornará em breve.</p>
+                    <Button 
+                      onClick={() => setIsSubmitted(false)} 
+                      className="mt-4 bg-primary hover:bg-primary/90"
+                    >
+                      Enviar Outra Mensagem
+                    </Button>
+                  </div>
+                ) : (
+                  <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <FormField
+                          control={form.control}
+                          name="name"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Nome</FormLabel>
+                              <FormControl>
+                                <Input placeholder="Seu nome completo" {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                        <FormField
+                          control={form.control}
+                          name="email"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Email</FormLabel>
+                              <FormControl>
+                                <Input type="email" placeholder="Seu email" {...field} />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                      </div>
+
+                      <FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Telefone</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Seu telefone (opcional)" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="message"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>Mensagem</FormLabel>
+                            <FormControl>
+                              <Textarea 
+                                placeholder="Como podemos ajudar?" 
+                                className="min-h-[150px]" 
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <Button 
+                        type="submit" 
+                        className="w-full md:w-auto bg-primary hover:bg-primary/90"
+                        disabled={mutation.isPending}
+                      >
+                        {mutation.isPending ? "Enviando..." : "Enviar Mensagem"}
+                      </Button>
+                    </form>
+                  </Form>
+                )}
+              </CardContent>
+            </Card>
+          </div>
+
+          <div>
+            <Card>
+              <CardContent className="p-8">
+                <h2 className="font-heading font-bold text-2xl mb-6">Informações de Contato</h2>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="bg-primary/10 p-3 rounded-full mr-4">
+                      <MapPin className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold text-lg">Endereço</h3>
+                      <p className="text-gray-600">
+                        Rod. BR 101, Km 123 - Zona Industrial<br />
+                        Joinville, SC - CEP 89000-000
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-primary/10 p-3 rounded-full mr-4">
+                      <Phone className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold text-lg">Telefone</h3>
+                      <p className="text-gray-600">
+                        (47) 3123-4567<br />
+                        (47) 98765-4321
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-primary/10 p-3 rounded-full mr-4">
+                      <Mail className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold text-lg">Email</h3>
+                      <p className="text-gray-600">
+                        contato@tfalimentos.com.br<br />
+                        comercial@tfalimentos.com.br
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="bg-primary/10 p-3 rounded-full mr-4">
+                      <Clock className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold text-lg">Horário de Atendimento</h3>
+                      <p className="text-gray-600">
+                        Segunda a Sexta: 8h às 18h<br />
+                        Sábado: 8h às 12h
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <h3 className="font-heading font-semibold text-lg mb-4">Siga-nos</h3>
+                  <div className="flex space-x-4">
+                    <a href="#" className="bg-primary text-white p-2 rounded-full hover:bg-primary/80 transition">
+                      <i className="fab fa-facebook-f w-5 h-5 flex items-center justify-center"></i>
+                    </a>
+                    <a href="#" className="bg-primary text-white p-2 rounded-full hover:bg-primary/80 transition">
+                      <i className="fab fa-instagram w-5 h-5 flex items-center justify-center"></i>
+                    </a>
+                    <a href="#" className="bg-primary text-white p-2 rounded-full hover:bg-primary/80 transition">
+                      <i className="fab fa-linkedin-in w-5 h-5 flex items-center justify-center"></i>
+                    </a>
+                    <a href="#" className="bg-primary text-white p-2 rounded-full hover:bg-primary/80 transition">
+                      <i className="fab fa-youtube w-5 h-5 flex items-center justify-center"></i>
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="mt-6">
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="font-heading font-semibold text-lg mb-4">Departamentos</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-heading font-semibold">Vendas Corporativas</h4>
+                      <p className="text-gray-600 text-sm">comercial@tfalimentos.com.br</p>
+                    </div>
+                    <div>
+                      <h4 className="font-heading font-semibold">Recursos Humanos</h4>
+                      <p className="text-gray-600 text-sm">rh@tfalimentos.com.br</p>
+                    </div>
+                    <div>
+                      <h4 className="font-heading font-semibold">Suporte Técnico</h4>
+                      <p className="text-gray-600 text-sm">suporte@tfalimentos.com.br</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="font-heading font-bold text-2xl mb-6 text-center">Nossa Localização</h2>
+          <div className="h-[400px] rounded-lg overflow-hidden">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.5478488047124!2d-48.846945024551714!3d-26.22967197991455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de94ba77843283%3A0x28c7c21c14846d0a!2sJoinville%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1689125646512!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="400" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Mapa da localização da TF Alimentos"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
