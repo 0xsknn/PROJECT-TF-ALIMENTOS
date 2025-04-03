@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import blackFarmerImage from "../../assets/Pedro-Stropasolas-Brasil-de-Fato.jpeg";
 
 interface Slide {
   id: number;
@@ -15,7 +16,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    imageUrl: "https://images.pexels.com/photos/5528994/pexels-photo-5528994.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
+    imageUrl: blackFarmerImage,
     title: "Qualidade em Grãos para sua Indústria",
     description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
     buttonText: "Conheça Nossos Produtos",
