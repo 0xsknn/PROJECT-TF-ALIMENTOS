@@ -46,7 +46,7 @@ export const mockBlogPosts: BlogPost[] = [
       
       <p>Como produtores responsáveis, devemos buscar constantemente formas mais eficientes e sustentáveis de utilizar nossos recursos naturais, garantindo a produtividade atual sem comprometer as gerações futuras.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1626059870622-55e33982151a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
     createdAt: "2023-08-12T14:30:00.000Z"
   },
   {
@@ -101,7 +101,7 @@ export const mockBlogPosts: BlogPost[] = [
       
       <p>O mercado de grãos para 2024 apresenta perspectivas moderadamente positivas, com desafios a serem enfrentados, mas também oportunidades significativas. A capacidade de adaptação, o investimento em tecnologia e a atenção constante às tendências de mercado serão fatores determinantes para o sucesso no setor agrícola no próximo ano.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
     createdAt: "2023-07-28T09:15:00.000Z"
   },
   {
@@ -173,7 +173,7 @@ export const mockBlogPosts: BlogPost[] = [
       
       <p>O arroz orgânico representa não apenas uma alternativa mais sustentável de produção, mas também uma oportunidade de agregar valor à produção e acessar mercados diferenciados. Com planejamento adequado e assistência técnica especializada, a conversão para o sistema orgânico pode trazer benefícios ambientais, nutricionais e econômicos significativos.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1570586437263-ab629fccc818?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1507434965515-31d3103ca423?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
     createdAt: "2023-07-15T11:45:00.000Z"
   },
   {
@@ -261,7 +261,7 @@ export const mockBlogPosts: BlogPost[] = [
       
       <p>Como produtores responsáveis, devemos buscar constantemente o aprimoramento de nossas práticas, integrando conhecimento científico e experiência de campo para uma produção cada vez mais eficiente e sustentável.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1510664543050-758ef9a42222?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
     createdAt: "2023-06-20T10:30:00.000Z"
   },
   {
@@ -358,7 +358,7 @@ export const mockBlogPosts: BlogPost[] = [
       
       <p>Na TF Alimentos, temos investido continuamente em pesquisa de mercado e desenvolvimento de produtos que atendam a essas tendências emergentes, garantindo nossa competitividade e contribuindo para a evolução positiva do setor arrozeiro brasileiro.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1516824711718-9c1e683412ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1536055578621-59309b2a0001?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
     createdAt: "2023-06-05T16:20:00.000Z"
   },
   {
@@ -465,7 +465,7 @@ export const mockBlogPosts: BlogPost[] = [
       
       <p>Em um cenário de crescentes desafios climáticos e demanda por práticas mais sustentáveis, a rotação de culturas emerge não apenas como uma recomendação técnica, mas como um componente estratégico essencial para a viabilidade econômica e ambiental dos sistemas de produção de grãos.</p>
     `,
-    imageUrl: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=300&q=80",
     createdAt: "2023-05-22T08:40:00.000Z"
   }
 ];
