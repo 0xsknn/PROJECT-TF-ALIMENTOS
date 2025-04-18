@@ -17,16 +17,8 @@ interface SlideItem {
 // Dados dos slides
 const bannerSlides: SlideItem[] = [
   {
-    id: 1,
-    imageUrl: blackFarmerImage,
-    title: "Qualidade em Grãos para sua Indústria",
-    description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
-    buttonText: "Conheça Nossos Produtos",
-    buttonLink: "/redirect-to-products"
-  },
-  {
     id: 2,
-    imageUrl: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
+    imageUrl: "/images/culitvoarroz.jpg",
     title: "Compromisso com a Agricultura Responsável",
     description: "Produção sustentável com respeito ao meio ambiente e às comunidades locais",
     buttonText: "Nossa Sustentabilidade",
@@ -34,7 +26,7 @@ const bannerSlides: SlideItem[] = [
   },
   {
     id: 3,
-    imageUrl: "https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&dpr=1",
+    imageUrl: "/images/arrozcasca.jpg",
     title: "Tecnologia e Tradição no Campo",
     description: "Combinamos métodos tradicionais com tecnologia de ponta para oferecer o melhor",
     buttonText: "Nosso Processo",
@@ -79,7 +71,7 @@ const HeroSlider = () => {
   }, [nextSlide]);
 
   return (
-    <div className="relative h-[500px] md:h-[600px] overflow-hidden">
+    <div className="relative h-[400px] md:h-[600px] overflow-hidden">
       {/* Container de slides */}
       <div className="h-full relative">
         {bannerSlides.map((slide, index) => (
@@ -98,23 +90,20 @@ const HeroSlider = () => {
             
             {/* Overlay com conteúdo */}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center">
-              <div className="container mx-auto px-4">
-                <div className="max-w-xl text-white">
-                  <h1 className="font-heading font-bold text-4xl md:text-5xl mb-4">
+              <div className="px-4 w-full">
+                <div className="max-w-xl text-white mx-auto">
+                  <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">
                     {slide.title}
-                  </h1>
-                  <p className="text-lg mb-6">
+                  </h2>
+                  <p className="text-base md:text-lg mb-6">
                     {slide.description}
                   </p>
                   
                   {/* Botão de ação do slide */}
                   <Button 
-                    className="bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md h-auto"
+                    className="bg-green-700 hover:bg-green-800 text-white font-heading font-semibold px-6 py-3 rounded-md h-auto"
                     onClick={() => {
-                      // Navegação programática explícita
-                      if (slide.id === 1) {
-                        navigateTo("/redirect-to-products");
-                      } else if (slide.id === 2) {
+                      if (slide.id === 2) {
                         navigateTo("/sobre");
                       } else {
                         navigateTo("/qualidade");
@@ -146,18 +135,18 @@ const HeroSlider = () => {
       
       {/* Botões de navegação */}
       <button 
-        className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
+        className="absolute top-1/2 left-4 -translate-y-1/2 w-8 h-8 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
         onClick={prevSlide}
         aria-label="Slide anterior"
       >
-        <ChevronLeft className="h-6 w-6" />
+        <ChevronLeft className="h-5 w-5" />
       </button>
       <button 
-        className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
+        className="absolute top-1/2 right-4 -translate-y-1/2 w-8 h-8 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
         onClick={nextSlide}
         aria-label="Próximo slide"
       >
-        <ChevronRight className="h-6 w-6" />
+        <ChevronRight className="h-5 w-5" />
       </button>
     </div>
   );
