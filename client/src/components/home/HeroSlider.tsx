@@ -23,14 +23,6 @@ const bannerSlides: SlideItem[] = [
     buttonLink: "/produtos"
   },
   {
-    id: 2,
-    imageUrl: "/images/culitvoarroz.jpg",
-    title: "Compromisso com a Agricultura Responsável",
-    description: "Produção sustentável com respeito ao meio ambiente e às comunidades locais",
-    buttonText: "Nossa Sustentabilidade",
-    buttonLink: "/sobre"
-  },
-  {
     id: 3,
     imageUrl: "/images/arrozcasca.jpg",
     title: "Tecnologia e Tradição no Campo",
