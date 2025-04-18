@@ -17,6 +17,14 @@ interface SlideItem {
 // Dados dos slides
 const bannerSlides: SlideItem[] = [
   {
+    id: 1,
+    imageUrl: blackFarmerImage,
+    title: "Qualidade em Grãos para sua Indústria",
+    description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
+    buttonText: "Conheça Nossos Produtos",
+    buttonLink: "/produtos"
+  },
+  {
     id: 2,
     imageUrl: "/images/culitvoarroz.jpg",
     title: "Compromisso com a Agricultura Responsável",
@@ -103,7 +111,9 @@ const HeroSlider = () => {
                   <Button 
                     className="bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md h-auto"
                     onClick={() => {
-                      if (slide.id === 2) {
+                      if (slide.id === 1) {
+                        navigateTo("/produtos");
+                      } else if (slide.id === 2) {
                         navigateTo("/sobre");
                       } else {
                         navigateTo("/qualidade");
