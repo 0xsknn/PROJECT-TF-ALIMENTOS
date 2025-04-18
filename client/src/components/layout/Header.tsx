@@ -54,6 +54,9 @@ const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
+                  <Link href="/#produtos" className="w-full">Todos os Produtos</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
                   <Link href="/produtos/arroz-com-casca" className="w-full">Arroz com Casca</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
@@ -99,6 +102,9 @@ const Header = () => {
               
               {mobileDropdownOpen && (
                 <div className="pl-4 py-1">
+                  <Link href="/#produtos" className="block py-2 hover:text-primary">
+                    Todos os Produtos
+                  </Link>
                   <Link href="/produtos/arroz-com-casca" className="block py-2 hover:text-primary">
                     Arroz com Casca
                   </Link>
