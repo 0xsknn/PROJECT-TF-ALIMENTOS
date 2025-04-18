@@ -19,6 +19,8 @@ function Router() {
       <Route path="/sobre" component={About} />
       <Route path="/qualidade" component={QualityCenter} />
       <Route path="/contato" component={Contact} />
+      {/* Route para página de produtos geral - redireciona para a home */}
+      <Route path="/produtos" component={Home} />
       <Route component={NotFound} />
     </Switch>
   );
