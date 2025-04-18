@@ -42,13 +42,13 @@ const Header = () => {
           
           {/* Desktop menu */}
           <nav className="hidden md:flex space-x-8 items-center">
-            <Link href="/" className={`font-heading font-semibold ${isActive('/') ? 'text-primary border-b-2 border-primary' : 'hover:text-primary'}`}>
+            <Link href="/" className="font-heading font-semibold text-green-600">
               Início
             </Link>
             
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="link" className="font-heading font-semibold hover:text-primary p-0 h-auto">
+                <Button variant="link" className="font-heading font-semibold text-green-600 p-0 h-auto">
                   Produtos <ChevronDown className="ml-1 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
@@ -68,16 +68,15 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             
-            <Link href="/sobre" className={`font-heading font-semibold ${isActive('/sobre') ? 'text-primary border-b-2 border-primary' : 'hover:text-primary'}`}>
+            <Link href="/sobre" className="font-heading font-semibold text-green-600">
               Sobre Nós
             </Link>
             
-
-            <Link href="/qualidade" className={`font-heading font-semibold ${isActive('/qualidade') ? 'text-primary border-b-2 border-primary' : 'hover:text-primary'}`}>
+            <Link href="/qualidade" className="font-heading font-semibold text-green-600">
               Centro de Qualidade
             </Link>
             
-            <Link href="/contato" className={`font-heading font-semibold ${isActive('/contato') ? 'text-primary border-b-2 border-primary' : 'hover:text-primary'}`}>
+            <Link href="/contato" className="font-heading font-semibold text-green-600">
               Contato
             </Link>
           </nav>
@@ -88,13 +87,13 @@ const Header = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="container mx-auto px-4 py-2">
-            <Link href="/" className={`block py-2 font-heading font-semibold ${isActive('/') ? 'text-primary' : 'hover:text-primary'}`}>
+            <Link href="/" className="block py-2 font-heading font-semibold text-green-600">
               Início
             </Link>
             
             <div className="mobile-dropdown">
               <button 
-                className="w-full text-left py-2 font-heading font-semibold hover:text-primary flex items-center justify-between"
+                className="w-full text-left py-2 font-heading font-semibold text-green-600 flex items-center justify-between"
                 onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
               >
                 Produtos <ChevronDown className={`h-4 w-4 transition-transform ${mobileDropdownOpen ? 'rotate-180' : ''}`} />
@@ -102,32 +101,31 @@ const Header = () => {
               
               {mobileDropdownOpen && (
                 <div className="pl-4 py-1">
-                  <Link href="/produtos" className="block py-2 hover:text-primary">
+                  <Link href="/produtos" className="block py-2 hover:text-green-700">
                     Todos os Produtos
                   </Link>
-                  <Link href="/produtos/arroz-com-casca" className="block py-2 hover:text-primary">
+                  <Link href="/produtos/arroz-com-casca" className="block py-2 hover:text-green-700">
                     Arroz com Casca
                   </Link>
-                  <Link href="/produtos/soja-grao" className="block py-2 hover:text-primary">
+                  <Link href="/produtos/soja-grao" className="block py-2 hover:text-green-700">
                     Soja Grão
                   </Link>
-                  <Link href="/produtos/milho" className="block py-2 hover:text-primary">
+                  <Link href="/produtos/milho" className="block py-2 hover:text-green-700">
                     Milho
                   </Link>
                 </div>
               )}
             </div>
             
-            <Link href="/sobre" className={`block py-2 font-heading font-semibold ${isActive('/sobre') ? 'text-primary' : 'hover:text-primary'}`}>
+            <Link href="/sobre" className="block py-2 font-heading font-semibold text-green-600">
               Sobre Nós
             </Link>
             
-
-            <Link href="/qualidade" className={`block py-2 font-heading font-semibold ${isActive('/qualidade') ? 'text-primary' : 'hover:text-primary'}`}>
+            <Link href="/qualidade" className="block py-2 font-heading font-semibold text-green-600">
               Centro de Qualidade
             </Link>
             
-            <Link href="/contato" className={`block py-2 font-heading font-semibold ${isActive('/contato') ? 'text-primary' : 'hover:text-primary'}`}>
+            <Link href="/contato" className="block py-2 font-heading font-semibold text-green-600">
               Contato
             </Link>
           </div>
