@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
-import { Link, useLocation } from "wouter";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import blackFarmerImage from "../../assets/Pedro-Stropasolas-Brasil-de-Fato.jpeg";
 
-interface Slide {
+// Define um tipo para os slides
+interface SlideItem {
   id: number;
   imageUrl: string;
   title: string;
@@ -13,14 +14,15 @@ interface Slide {
   buttonLink: string;
 }
 
-const slides: Slide[] = [
+// Dados dos slides
+const bannerSlides: SlideItem[] = [
   {
     id: 1,
     imageUrl: blackFarmerImage,
     title: "Qualidade em Grãos para sua Indústria",
     description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
     buttonText: "Conheça Nossos Produtos",
-    buttonLink: "/produtos"
+    buttonLink: "/redirect-to-products"
   },
   {
     id: 2,
@@ -41,51 +43,60 @@ const slides: Slide[] = [
 ];
 
 const HeroSlider = () => {
+  // Estado para controlar qual slide está ativo
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [, setLocation] = useLocation();
+  // Hook de navegação do wouter
+  const [, navigate] = useLocation();
 
+  // Função para avançar para o próximo slide
   const nextSlide = useCallback(() => {
-    setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+    setCurrentSlide((prev) => (prev === bannerSlides.length - 1 ? 0 : prev + 1));
   }, []);
 
+  // Função para voltar para o slide anterior
   const prevSlide = useCallback(() => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
+    setCurrentSlide((prev) => (prev === 0 ? bannerSlides.length - 1 : prev - 1));
   }, []);
 
+  // Função para ir para um slide específico
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
 
-  const handleSlideAction = (path: string) => {
-    // Utilizando setLocation em vez de Link para garantir a navegação programática
-    setLocation(path);
+  // Função para navegação programática
+  const navigateTo = (path: string) => {
+    console.log("Navegando para:", path);
+    navigate(path);
   };
 
-  // Auto slide every 5 seconds
+  // Efeito para mudar slides automaticamente
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 5000);
-
+    
     return () => clearInterval(interval);
   }, [nextSlide]);
 
   return (
-    <div className="hero-slider relative h-[500px] md:h-[600px] overflow-hidden">
-      {/* Slider container */}
-      <div className="slider-container h-full relative">
-        {slides.map((slide, index) => (
+    <div className="relative h-[500px] md:h-[600px] overflow-hidden">
+      {/* Container de slides */}
+      <div className="h-full relative">
+        {bannerSlides.map((slide, index) => (
           <div 
             key={slide.id}
-            className={`slide absolute inset-0 transition-opacity duration-1000 ${
+            className={`absolute inset-0 transition-opacity duration-1000 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
+            {/* Imagem de fundo */}
             <img 
               src={slide.imageUrl}
               alt={slide.title} 
               className="object-cover w-full h-full"
             />
+            
+            {/* Overlay com conteúdo */}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center">
               <div className="container mx-auto px-4">
                 <div className="max-w-xl text-white">
@@ -95,9 +106,20 @@ const HeroSlider = () => {
                   <p className="text-lg mb-6">
                     {slide.description}
                   </p>
+                  
+                  {/* Botão de ação do slide */}
                   <Button 
                     className="bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md h-auto"
-                    onClick={() => handleSlideAction(slide.buttonLink)}
+                    onClick={() => {
+                      // Navegação programática explícita
+                      if (slide.id === 1) {
+                        navigateTo("/redirect-to-products");
+                      } else if (slide.id === 2) {
+                        navigateTo("/sobre");
+                      } else {
+                        navigateTo("/qualidade");
+                      }
+                    }}
                   >
                     {slide.buttonText}
                   </Button>
@@ -108,34 +130,32 @@ const HeroSlider = () => {
         ))}
       </div>
       
-      {/* Slider controls */}
+      {/* Indicadores de slide */}
       <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
-        {slides.map((_, index) => (
+        {bannerSlides.map((_, index) => (
           <button 
             key={index}
             className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide 
-                ? "bg-white" 
-                : "bg-white bg-opacity-50"
+              index === currentSlide ? "bg-white" : "bg-white bg-opacity-50"
             }`}
             onClick={() => goToSlide(index)}
-            aria-label={`Go to slide ${index + 1}`}
+            aria-label={`Ir para slide ${index + 1}`}
           />
         ))}
       </div>
       
-      {/* Slider arrows */}
+      {/* Botões de navegação */}
       <button 
         className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
         onClick={prevSlide}
-        aria-label="Previous slide"
+        aria-label="Slide anterior"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
       <button 
         className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
         onClick={nextSlide}
-        aria-label="Next slide"
+        aria-label="Próximo slide"
       >
         <ChevronRight className="h-6 w-6" />
       </button>

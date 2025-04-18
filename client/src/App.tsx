@@ -11,6 +11,7 @@ import ProductDetails from "@/pages/ProductDetails";
 import About from "@/pages/About";
 import QualityCenter from "@/pages/QualityCenter";
 import Contact from "@/pages/Contact";
+import RedirectToProducts from "@/pages/RedirectToProducts";
 
 function Router() {
   return (
@@ -22,6 +23,8 @@ function Router() {
       <Route path="/contato" component={Contact} />
       {/* Route para página de produtos geral */}
       <Route path="/produtos" component={Products} />
+      {/* Rota de redirecionamento especial para resolver o problema do banner */}
+      <Route path="/redirect-to-products" component={RedirectToProducts} />
       <Route component={NotFound} />
     </Switch>
   );
