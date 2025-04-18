@@ -23,8 +23,12 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center mr-2 text-white font-heading font-bold">TF</div>
-              <span className="text-xl font-heading font-bold">TF Alimentos</span>
+              <img 
+                src="/images/logo.png" 
+                alt="TF Alimentos Logo" 
+                className="h-12 mr-2" 
+              />
+              <span className="text-xl font-heading font-bold text-verde-lodo">TF Alimentos</span>
             </Link>
           </div>
           
