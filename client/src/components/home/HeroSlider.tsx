@@ -74,11 +74,7 @@ const HeroSlider = () => {
             <img 
               src={slide.imageUrl}
               alt={slide.title} 
-              className={`w-full h-full ${
-                slide.imageUrl.includes('agricultores-arroz') 
-                ? 'object-contain' 
-                : 'object-cover'
-              }`}
+              className="object-cover w-full h-full"
             />
             
             {/* Overlay com conteúdo */}
