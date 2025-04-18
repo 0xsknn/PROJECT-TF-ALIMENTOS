@@ -24,7 +24,7 @@ const bannerSlides: SlideItem[] = [
   },
   {
     id: 3,
-    imageUrl: "/images/arrozcasca.jpg",
+    imageUrl: "/images/tratormilhooo.jpeg",
     title: "Tecnologia e Tradição no Campo",
     description: "Combinamos métodos tradicionais com tecnologia de ponta para oferecer o melhor",
     buttonText: "Nosso Processo",
