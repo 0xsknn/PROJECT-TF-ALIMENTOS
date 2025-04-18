@@ -181,26 +181,76 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                   <div>
                     <h3 className="font-heading font-semibold text-xl mb-4">Destaques</h3>
                     <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                        <span>Alta qualidade de grãos integrais</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                        <span>Baixo índice de impurezas</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                        <span>Excelente para armazenamento prolongado</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                        <span>Rastreabilidade completa da produção</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                        <span>Produção com práticas agrícolas sustentáveis</span>
-                      </li>
+                      {product.category === 'soja' ? (
+                        <>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Soja não transgênica certificada</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Alto teor de proteínas e nutrientes</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Baixo índice de impurezas</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Rastreabilidade completa da produção</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Produção com práticas agrícolas sustentáveis</span>
+                          </li>
+                        </>
+                      ) : product.category === 'milho' ? (
+                        <>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Grãos uniformes e selecionados</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Alto valor nutritivo e energético</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Baixo índice de micotoxinas</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Rastreabilidade completa da produção</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Produção com práticas agrícolas sustentáveis</span>
+                          </li>
+                        </>
+                      ) : (
+                        <>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Alta qualidade de grãos integrais</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Baixo índice de impurezas</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Excelente para armazenamento prolongado</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Rastreabilidade completa da produção</span>
+                          </li>
+                          <li className="flex items-start">
+                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
+                            <span>Produção com práticas agrícolas sustentáveis</span>
+                          </li>
+                        </>
+                      )}
                     </ul>
                   </div>
                 </div>
