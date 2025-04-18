@@ -65,7 +65,7 @@ const CurrentHarvest = () => {
   }
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section id="produtos" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading font-bold text-3xl md:text-4xl mb-2">Safra Atual</h2>
