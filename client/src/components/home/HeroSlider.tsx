@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import blackFarmerImage from "../../assets/Pedro-Stropasolas-Brasil-de-Fato.jpeg";
@@ -42,6 +42,7 @@ const slides: Slide[] = [
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [, setLocation] = useLocation();
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
@@ -53,6 +54,11 @@ const HeroSlider = () => {
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
+  };
+
+  const handleSlideAction = (path: string) => {
+    // Utilizando setLocation em vez de Link para garantir a navegação programática
+    setLocation(path);
   };
 
   // Auto slide every 5 seconds
@@ -89,13 +95,12 @@ const HeroSlider = () => {
                   <p className="text-lg mb-6">
                     {slide.description}
                   </p>
-                  <Link href={slide.buttonLink}>
-                    <Button 
-                      className="bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md h-auto"
-                    >
-                      {slide.buttonText}
-                    </Button>
-                  </Link>
+                  <Button 
+                    className="bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md h-auto"
+                    onClick={() => handleSlideAction(slide.buttonLink)}
+                  >
+                    {slide.buttonText}
+                  </Button>
                 </div>
               </div>
             </div>
