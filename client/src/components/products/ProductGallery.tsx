@@ -2,26 +2,77 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
-const productImages = [
-  {
-    id: 1,
-    src: "/images/arroz1111.webp",
-    thumbnail: "/images/arroz1111.webp",
-    alt: "Arroz com Casca - Na Mão"
-  },
-  {
-    id: 2,
-    src: "/images/arroz222.webp",
-    thumbnail: "/images/arroz222.webp",
-    alt: "Arroz com Casca - Em Quantidade"
-  },
-  {
-    id: 3,
-    src: "/images/arroz3333.jpg",
-    thumbnail: "/images/arroz3333.jpg",
-    alt: "Arroz com Casca - Detalhe Próximo"
-  }
-];
+interface ProductImage {
+  id: number;
+  src: string;
+  thumbnail: string;
+  alt: string;
+}
+
+type ProductCategory = 'arroz' | 'soja' | 'milho';
+
+const productImagesMap: Record<ProductCategory, ProductImage[]> = {
+  arroz: [
+    {
+      id: 1,
+      src: "/images/arroz1111.webp",
+      thumbnail: "/images/arroz1111.webp",
+      alt: "Arroz com Casca - Na Mão"
+    },
+    {
+      id: 2,
+      src: "/images/arroz222.webp",
+      thumbnail: "/images/arroz222.webp",
+      alt: "Arroz com Casca - Em Quantidade"
+    },
+    {
+      id: 3,
+      src: "/images/arroz3333.jpg",
+      thumbnail: "/images/arroz3333.jpg",
+      alt: "Arroz com Casca - Detalhe Próximo"
+    }
+  ],
+  soja: [
+    {
+      id: 1,
+      src: "/images/sojaaa1.png",
+      thumbnail: "/images/sojaaa1.png",
+      alt: "Soja Grão - Detalhe"
+    },
+    {
+      id: 2,
+      src: "/images/arrozcasca.jpg",
+      thumbnail: "/images/arrozcasca.jpg", 
+      alt: "Soja Grão - Em Quantidade"
+    },
+    {
+      id: 3,
+      src: "/images/culitvoarroz.jpg",
+      thumbnail: "/images/culitvoarroz.jpg",
+      alt: "Soja Grão - Plantação"
+    }
+  ],
+  milho: [
+    {
+      id: 1,
+      src: "/images/1mao.webp",
+      thumbnail: "/images/1mao.webp",
+      alt: "Milho - Na Mão em Armazém"
+    },
+    {
+      id: 2,
+      src: "/images/2mao.jpg",
+      thumbnail: "/images/2mao.jpg",
+      alt: "Milho - Amostra na Mão"
+    },
+    {
+      id: 3,
+      src: "/images/inteiro.webp",
+      thumbnail: "/images/inteiro.webp",
+      alt: "Milho - Grãos Armazenados"
+    }
+  ]
+};
 
 interface ProductGalleryProps {
   productName: string;
@@ -31,6 +82,21 @@ export const ProductGallery = ({ productName }: ProductGalleryProps) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  // Determine which category to use based on the product name
+  const getProductCategory = () => {
+    if (productName.toLowerCase().includes('arroz')) {
+      return 'arroz';
+    } else if (productName.toLowerCase().includes('soja')) {
+      return 'soja';
+    } else if (productName.toLowerCase().includes('milho')) {
+      return 'milho';
+    }
+    return 'arroz'; // Default fallback
+  };
+
+  const productCategory = getProductCategory();
+  const productImages = productImagesMap[productCategory];
 
   const handleThumbnailClick = (index: number) => {
     setCurrentImage(index);
