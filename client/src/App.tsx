@@ -6,6 +6,7 @@ import NotFound from "@/pages/not-found";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Home from "@/pages/Home";
+import Products from "@/pages/Products";
 import ProductDetails from "@/pages/ProductDetails";
 import About from "@/pages/About";
 import QualityCenter from "@/pages/QualityCenter";
@@ -19,8 +20,8 @@ function Router() {
       <Route path="/sobre" component={About} />
       <Route path="/qualidade" component={QualityCenter} />
       <Route path="/contato" component={Contact} />
-      {/* Route para página de produtos geral - redireciona para a home */}
-      <Route path="/produtos" component={Home} />
+      {/* Route para página de produtos geral */}
+      <Route path="/produtos" component={Products} />
       <Route component={NotFound} />
     </Switch>
   );
