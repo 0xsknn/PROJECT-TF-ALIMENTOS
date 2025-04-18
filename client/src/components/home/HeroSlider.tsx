@@ -71,7 +71,7 @@ const HeroSlider = () => {
   }, [nextSlide]);
 
   return (
-    <div className="relative h-[400px] md:h-[600px] overflow-hidden">
+    <div className="relative h-[500px] md:h-[600px] overflow-hidden">
       {/* Container de slides */}
       <div className="h-full relative">
         {bannerSlides.map((slide, index) => (
@@ -90,18 +90,18 @@ const HeroSlider = () => {
             
             {/* Overlay com conteúdo */}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center">
-              <div className="px-4 w-full">
-                <div className="max-w-xl text-white mx-auto">
-                  <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">
+              <div className="container mx-auto px-4">
+                <div className="max-w-xl text-white">
+                  <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4">
                     {slide.title}
                   </h2>
-                  <p className="text-base md:text-lg mb-6">
+                  <p className="text-lg mb-6">
                     {slide.description}
                   </p>
                   
                   {/* Botão de ação do slide */}
                   <Button 
-                    className="bg-green-700 hover:bg-green-800 text-white font-heading font-semibold px-6 py-3 rounded-md h-auto"
+                    className="bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md h-auto"
                     onClick={() => {
                       if (slide.id === 2) {
                         navigateTo("/sobre");
@@ -135,18 +135,18 @@ const HeroSlider = () => {
       
       {/* Botões de navegação */}
       <button 
-        className="absolute top-1/2 left-4 -translate-y-1/2 w-8 h-8 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
+        className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
         onClick={prevSlide}
         aria-label="Slide anterior"
       >
-        <ChevronLeft className="h-5 w-5" />
+        <ChevronLeft className="h-6 w-6" />
       </button>
       <button 
-        className="absolute top-1/2 right-4 -translate-y-1/2 w-8 h-8 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
+        className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
         onClick={nextSlide}
         aria-label="Próximo slide"
       >
-        <ChevronRight className="h-5 w-5" />
+        <ChevronRight className="h-6 w-6" />
       </button>
     </div>
   );
