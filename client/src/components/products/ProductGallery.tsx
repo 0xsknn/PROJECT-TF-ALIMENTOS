@@ -35,21 +35,21 @@ const productImagesMap: Record<ProductCategory, ProductImage[]> = {
   soja: [
     {
       id: 1,
-      src: "/images/sojaaa1.png",
-      thumbnail: "/images/sojaaa1.png",
-      alt: "Soja Grão - Detalhe"
+      src: "/images/1maosoja.png",
+      thumbnail: "/images/1maosoja.png",
+      alt: "Soja Grão - Detalhe na Mão"
     },
     {
       id: 2,
-      src: "/images/arrozcasca.jpg",
-      thumbnail: "/images/arrozcasca.jpg", 
-      alt: "Soja Grão - Em Quantidade"
+      src: "/images/2maosoja.png",
+      thumbnail: "/images/2maosoja.png", 
+      alt: "Soja Grão - Na Mão no Armazém"
     },
     {
       id: 3,
-      src: "/images/culitvoarroz.jpg",
-      thumbnail: "/images/culitvoarroz.jpg",
-      alt: "Soja Grão - Plantação"
+      src: "/images/inteirosoja.png",
+      thumbnail: "/images/inteirosoja.png",
+      alt: "Soja Grão - Detalhe Grãos"
     }
   ],
   milho: [
