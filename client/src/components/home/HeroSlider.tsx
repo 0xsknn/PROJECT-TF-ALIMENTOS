@@ -1,6 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
-import { useLocation } from "wouter";
-import { Button } from "@/components/ui/button";
+import React, { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import blackFarmerImage from "../../assets/Pedro-Stropasolas-Brasil-de-Fato.jpeg";
 
@@ -45,8 +43,6 @@ const bannerSlides: SlideItem[] = [
 const HeroSlider = () => {
   // Estado para controlar qual slide está ativo
   const [currentSlide, setCurrentSlide] = useState(0);
-  // Hook de navegação do wouter
-  const [, navigate] = useLocation();
 
   // Função para avançar para o próximo slide
   const nextSlide = useCallback(() => {
@@ -61,12 +57,6 @@ const HeroSlider = () => {
   // Função para ir para um slide específico
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
-  };
-
-  // Função para navegação programática
-  const navigateTo = (path: string) => {
-    console.log("Navegando para:", path);
-    navigate(path);
   };
 
   // Efeito para mudar slides automaticamente
@@ -107,21 +97,13 @@ const HeroSlider = () => {
                     {slide.description}
                   </p>
                   
-                  {/* Botão de ação do slide */}
-                  <Button 
-                    className="bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md h-auto"
-                    onClick={() => {
-                      if (slide.id === 1) {
-                        navigateTo("/produtos");
-                      } else if (slide.id === 2) {
-                        navigateTo("/sobre");
-                      } else {
-                        navigateTo("/qualidade");
-                      }
-                    }}
+                  {/* Links diretos sem depender de JavaScript */}
+                  <a 
+                    href={slide.buttonLink}
+                    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md"
                   >
                     {slide.buttonText}
-                  </Button>
+                  </a>
                 </div>
               </div>
             </div>
