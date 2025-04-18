@@ -30,5 +30,20 @@ export const mockProducts: Product[] = [
     impurity: "0.8%",
     ph: "6.9",
     createdAt: new Date().toISOString()
+  },
+  {
+    id: 4,
+    name: "Milho",
+    slug: "milho",
+    description: "Milho de alta qualidade, cultivado com técnicas sustentáveis e modernas. Ideal para processamento industrial e alimentação animal. Grãos uniformes com excelente valor nutricional.",
+    shortDescription: "Milho de alta qualidade para processamento industrial e alimentação animal, cultivado com práticas sustentáveis.",
+    category: "milho",
+    imageUrl: "/images/milho.jpg",
+    isAvailable: true,
+    isHighlighted: true,
+    moisture: "13.2%",
+    impurity: "0.9%",
+    ph: "6.7",
+    createdAt: new Date().toISOString()
   }
 ];

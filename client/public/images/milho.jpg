@@ -1,0 +1,3555 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="aui ltr" dir="ltr" lang="pt-BR">
+
+<head>
+	<title>Estado - Portal Embrapa</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+        
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+		<meta content="A Empresa Brasileira de Pesquisa Agropecuária (Embrapa) é uma empresa pública, vinculada ao Ministério da Agricultura e Pecuária (Mapa), que foi criada em 1973 para desenvolver a base tecnológica de um modelo de agricultura e pecuária genuinamente tropical. A iniciativa tem o desafio constante de garantir ao Brasil segurança alimentar e posição de destaque no mercado internacional de alimentos, fibras e energia." lang="pt-BR" name="description" />
+	
+
+	
+
+	
+		<meta content="Agricultura, Pecuária, Pesquisa, Agropecuária" lang="pt-BR" name="keywords" />
+	
+
+
+
+<link href="https://www.embrapa.br/portal-embrapa-theme/images/favicon.ico" rel="Shortcut Icon" />
+
+
+
+
+
+    <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x3f;t&#x3d;1584117949317" rel="canonical" />
+
+    
+
+            
+                <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x3f;t&#x3d;1584117949317" hreflang="x-default" rel="alternate" />
+            
+
+            <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x3f;t&#x3d;1584117949317&#x2f;pt" hreflang="pt-BR" rel="alternate" />
+
+    
+
+            
+
+            <link href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x3f;t&#x3d;1584117949317&#x2f;en" hreflang="en-US" rel="alternate" />
+
+    
+
+
+
+
+
+<link class="lfr-css-file" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;portal-embrapa-theme&#x2f;css&#x2f;aui&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;portalembrapa_WAR_portalembrapatheme&#x26;minifierType&#x3d;css&#x26;languageId&#x3d;pt_BR&#x26;b&#x3d;6210&#x26;t&#x3d;1742320517000" rel="stylesheet" type="text/css" />
+
+<link href="&#x2f;html&#x2f;css&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;portalembrapa_WAR_portalembrapatheme&#x26;minifierType&#x3d;css&#x26;languageId&#x3d;pt_BR&#x26;b&#x3d;6210&#x26;t&#x3d;1441805690000" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+	
+
+				<link href="https://www.embrapa.br/html/portlet/journal_content/css/main.css?browserId=other&amp;themeId=portalembrapa_WAR_portalembrapatheme&amp;minifierType=css&amp;languageId=pt_BR&amp;b=6210&amp;t=1744972354000" rel="stylesheet" type="text/css" />
+
+	
+
+				<link href="https://www.embrapa.br/html/portlet/asset_publisher/css/main.css?browserId=other&amp;themeId=portalembrapa_WAR_portalembrapatheme&amp;minifierType=css&amp;languageId=pt_BR&amp;b=6210&amp;t=1744972354000" rel="stylesheet" type="text/css" />
+
+	
+
+				<link href="https://www.embrapa.br/notifications-portlet/notifications/css/main.css?browserId=other&amp;themeId=portalembrapa_WAR_portalembrapatheme&amp;minifierType=css&amp;languageId=pt_BR&amp;b=6210&amp;t=1744972301000" rel="stylesheet" type="text/css" />
+
+	
+
+				<link href="https://www.embrapa.br/html/portlet/document_library/css/main.css?browserId=other&amp;themeId=portalembrapa_WAR_portalembrapatheme&amp;minifierType=css&amp;languageId=pt_BR&amp;b=6210&amp;t=1744972354000" rel="stylesheet" type="text/css" />
+
+	
+
+				<link href="https://www.embrapa.br/html/portlet/document_library_display/css/main.css?browserId=other&amp;themeId=portalembrapa_WAR_portalembrapatheme&amp;minifierType=css&amp;languageId=pt_BR&amp;b=6210&amp;t=1744972354000" rel="stylesheet" type="text/css" />
+
+	
+
+
+
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		var Liferay = {
+			Browser: {
+				acceptsGzip: function() {
+					return false;
+				},
+				getMajorVersion: function() {
+					return 0.0;
+				},
+				getRevision: function() {
+					return "";
+				},
+				getVersion: function() {
+					return "";
+				},
+				isAir: function() {
+					return false;
+				},
+				isChrome: function() {
+					return false;
+				},
+				isFirefox: function() {
+					return false;
+				},
+				isGecko: function() {
+					return false;
+				},
+				isIe: function() {
+					return false;
+				},
+				isIphone: function() {
+					return false;
+				},
+				isLinux: function() {
+					return false;
+				},
+				isMac: function() {
+					return false;
+				},
+				isMobile: function() {
+					return false;
+				},
+				isMozilla: function() {
+					return false;
+				},
+				isOpera: function() {
+					return false;
+				},
+				isRtf: function() {
+					return false;
+				},
+				isSafari: function() {
+					return false;
+				},
+				isSun: function() {
+					return false;
+				},
+				isWap: function() {
+					return false;
+				},
+				isWapXhtml: function() {
+					return false;
+				},
+				isWebKit: function() {
+					return false;
+				},
+				isWindows: function() {
+					return false;
+				},
+				isWml: function() {
+					return false;
+				}
+			},
+
+			Data: {
+				NAV_SELECTOR: '#navigation',
+
+				isCustomizationView: function() {
+					return false;
+				},
+
+				notices: [
+					null
+
+					
+
+					
+				]
+			},
+
+			ThemeDisplay: {
+				
+					getLayoutId: function() {
+						return "387";
+					},
+					getLayoutURL: function() {
+						return "https://www.embrapa.br/home";
+					},
+					getParentLayoutId: function() {
+						return "0";
+					},
+					isPrivateLayout: function() {
+						return "false";
+					},
+					isVirtualLayout: function() {
+						return false;
+					},
+				
+
+				getBCP47LanguageId: function() {
+					return "pt-BR";
+				},
+				getCDNBaseURL: function() {
+					return "https://www.embrapa.br";
+				},
+				getCDNDynamicResourcesHost: function() {
+					return "";
+				},
+				getCDNHost: function() {
+					return "";
+				},
+				getCompanyId: function() {
+					return "10154";
+				},
+				getCompanyGroupId: function() {
+					return "10192";
+				},
+				getDefaultLanguageId: function() {
+					return "pt_BR";
+				},
+				getDoAsUserIdEncoded: function() {
+					return "";
+				},
+				getLanguageId: function() {
+					return "pt_BR";
+				},
+				getParentGroupId: function() {
+					return "10180";
+				},
+				getPathContext: function() {
+					return "";
+				},
+				getPathImage: function() {
+					return "/image";
+				},
+				getPathJavaScript: function() {
+					return "/html/js";
+				},
+				getPathMain: function() {
+					return "/c";
+				},
+				getPathThemeImages: function() {
+					return "https://www.embrapa.br/portal-embrapa-theme/images";
+				},
+				getPathThemeRoot: function() {
+					return "/portal-embrapa-theme";
+				},
+				getPlid: function() {
+					return "1343662";
+				},
+				getPortalURL: function() {
+					return "https://www.embrapa.br";
+				},
+				getPortletSetupShowBordersDefault: function() {
+					return true;
+				},
+				getScopeGroupId: function() {
+					return "10180";
+				},
+				getScopeGroupIdOrLiveGroupId: function() {
+					return "10180";
+				},
+				getSessionId: function() {
+					
+						
+						
+							return "";
+						
+					
+				},
+				getSiteGroupId: function() {
+					return "10180";
+				},
+				getURLControlPanel: function() {
+					return "/group/control_panel?refererPlid=1343662";
+				},
+				getURLHome: function() {
+					return "https\x3a\x2f\x2fwww\x2eembrapa\x2ebr\x2fweb\x2fportal";
+				},
+				getUserId: function() {
+					return "10158";
+				},
+				getUserName: function() {
+					
+						
+						
+							return "";
+						
+					
+				},
+				isAddSessionIdToURL: function() {
+					return false;
+				},
+				isFreeformLayout: function() {
+					return false;
+				},
+				isImpersonated: function() {
+					return false;
+				},
+				isSignedIn: function() {
+					return false;
+				},
+				isStateExclusive: function() {
+					return false;
+				},
+				isStateMaximized: function() {
+					return false;
+				},
+				isStatePopUp: function() {
+					return false;
+				}
+			},
+
+			PropsValues: {
+				NTLM_AUTH_ENABLED: false
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		
+
+		Liferay.AUI = {
+			getAvailableLangPath: function() {
+				return 'available_languages.jsp?browserId=other&themeId=portalembrapa_WAR_portalembrapatheme&colorSchemeId=01&minifierType=js&languageId=pt_BR&b=6210&t=1744972322000';
+			},
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=other&minifierType=&languageId=pt_BR&b=6210&t=1744972322000&';
+			},
+			getFilter: function() {
+				
+					
+						return 'min';
+					
+					
+					
+				
+			},
+			getJavaScriptRootPath: function() {
+				return '/html/js';
+			},
+			getLangPath: function() {
+				return 'aui_lang.jsp?browserId=other&themeId=portalembrapa_WAR_portalembrapatheme&colorSchemeId=01&minifierType=js&languageId=pt_BR&b=6210&t=1744972322000';
+			},
+			getStaticResourceURLParams: function() {
+				return '?browserId=other&minifierType=&languageId=pt_BR&b=6210&t=1744972322000';
+			}
+		};
+
+		Liferay.authToken = '3U1DxsXX';
+
+		
+
+		Liferay.currentURL = '\x2fdocuments\x2f1355202\x2f46146682\x2fmilho\x2bfoto\x2ejpg\x2f57b69664-a31d-23df-a480-6c613fa98e1d\x3ft\x3d1584117949317';
+		Liferay.currentURLEncoded = '\x252Fdocuments\x252F1355202\x252F46146682\x252Fmilho\x252Bfoto\x2ejpg\x252F57b69664-a31d-23df-a480-6c613fa98e1d\x253Ft\x253D1584117949317';
+	// ]]>
+</script>
+
+
+	
+		
+			
+				<script src="/html/js/barebone.jsp?browserId=other&amp;themeId=portalembrapa_WAR_portalembrapatheme&amp;colorSchemeId=01&amp;minifierType=js&amp;minifierBundleId=javascript.barebone.files&amp;languageId=pt_BR&amp;b=6210&amp;t=1744972322000" type="text/javascript"></script>
+			
+			
+		
+	
+	
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		
+			
+				
+				
+			
+		
+
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+				<script type="text/javascript">
+					(function(i, s, o, g, r, a, m) {
+						i['GoogleAnalyticsObject'] = r;
+
+						i[r] = i[r] || function() {
+							var arrayValue = i[r].q || [];
+
+							i[r].q = arrayValue;
+
+							(i[r].q).push(arguments);
+						};
+
+						i[r].l = 1 * new Date();
+
+						a = s.createElement(o);
+						m = s.getElementsByTagName(o)[0];
+						a.async = 1;
+						a.src = g;
+						m.parentNode.insertBefore(a, m);
+					})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+					ga('create', 'UA-596642-1', 'auto');
+					ga('send', 'pageview');
+				</script>
+			
+		
+		
+	
+
+
+
+	
+		
+		
+
+			
+
+			
+				<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDomains", ["*.www.embrapa.br","*.embrapa.br"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://sistemas.sede.embrapa.br/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+			
+		
+	
+
+
+
+	
+		
+		
+
+			
+
+			
+				<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LSDHPPXJ3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5LSDHPPXJ3');
+</script>
+			
+		
+	
+
+
+
+<script type="text/javascript">
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if (c)g=c;else {var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for (var b=i.href,c=k.length;c--;)if (k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+!function(a){if (a.loadCSS){var b=loadCSS.relpreload={};if (b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for (var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+/*! onloadCSS. (onload callback for loadCSS) [c]2017 Filament Group, Inc. MIT License */
+function onloadCSS(a,b){function c(){!d&&b&&(d=!0,b.call(a))}var d;a.addEventListener&&a.addEventListener("load",c),a.attachEvent&&a.attachEvent("onload",c),"isApplicationInstalled"in navigator&&"onloadcssdefined"in a&&a.onloadcssdefined(c)}
+
+
+AUI().use('aui-base, aui-popover', function(A) {
+	Liferay.provide(window,"buildAutoriaPopoverTrigger",function(o){var e=AUI(),i="popoverCloseButton"+o.getAttribute("data-popover-autoria-id"),a=o.get("innerHTML")+'<span id="'+i+'" aria-hidden="true">&times;</span>',r=new e.Popover({align:{node:o,points:["bc","tc"]},constrain:!0,bodyContent:o.getAttribute("data-popover-body-content"),headerContent:a,position:"top",visible:!1,zIndex:200}).render(),n=function(){r.set("visible",!r.get("visible"))};new e.Button({cssClass:"close",iconAlign:"right",srcNode:"#"+i}).render().on("click",n,r),o.on("click",n)},["aui-base","aui-popover"]),
+	Liferay.provide(window,"applyAllAutoriaPopover",function(){AUI().all("span[class^='popover-publicacao-nome-autor-']").each(function(o){buildAutoriaPopoverTrigger(o)})},["aui-base","aui-popover"]),
+	Liferay.provide(window,"applyPublicacaoAutoriaPopover",function(o){AUI().all(".popover-publicacao-nome-autor-"+o).each(function(o){buildAutoriaPopoverTrigger(o)})},["aui-base","aui-popover"]);
+});
+</script>
+
+
+
+
+
+
+
+<script defer type="text/javascript">
+function disableAnalyticsLGPD() {
+   	
+	window['ga-disable-UA-596642-1'] = true;
+   	
+}
+function enableAnalyticsLGPD() {
+    
+    window['ga-disable-UA-596642-1'] = false;
+    ga('create', 'UA-596642-1', 'auto');
+    ga('send', 'pageview');
+    
+}
+
+// Por padrao inicia desabilitado
+disableAnalyticsLGPD();
+</script>
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;portal-embrapa-theme&#x2f;css&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;portalembrapa_WAR_portalembrapatheme&#x26;minifierType&#x3d;css&#x26;languageId&#x3d;pt_BR&#x26;b&#x3d;6210&#x26;t&#x3d;1742320517000" rel="stylesheet" type="text/css" />
+
+
+
+
+    <style type="text/css">
+        @media(max-width: 1248px) {
+
+.tp-card-item.tp-img-esq, .tp-card-item.tp-img-dir {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;    
+}
+.tp-card-item.tp-img-esq .tp-card-imagem,
+.tp-card-item.tp-img-dir .tp-card-imagem {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+}
+    </style>
+
+
+
+
+
+    <style type="text/css">
+
+        
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_168bHX9Utpgs_ .portlet-borderless-container {
+border-width:;
+border-style:
+}
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_CobmqWa7mO0f_ .portlet {
+border-width:;
+border-style:;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding-top: 50px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px
+}
+
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_101_INSTANCE_TdWEwPVqmAwa_ .portlet {
+border-width:;
+border-style:
+}
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_SSv6XKa6by2m_ .portlet-borderless-container {
+border-width:;
+border-style:
+}
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_xrtz6Kyei9OP_ .portlet {
+border-width:;
+border-style:;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px
+}
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_R4qtfckR5FNl_ .portlet {
+border-width:;
+border-style:;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px
+}
+
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_1uRk1fEU9c9y_ .portlet-borderless-container {
+border-width: 0px;
+border-style:;
+margin-top: -20px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 20px;
+padding-left: 0px
+}
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_4tL92W6ntB51_ .portlet {
+border-width:;
+border-style:
+}
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_dGvw0mJRrr6G_ .portlet-borderless-container {
+border-width:;
+border-style:
+}
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_qz0JmdYgRQfh_ .portlet {
+border-width:;
+border-style:;
+margin-top: 50px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px
+}
+
+/*
+#portlet_56_INSTANCE_qz0JmdYgRQfh .tp-card-item.tp-img-esq {
+    grid-template-columns: 1.5fr 3fr;
+}
+*/
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+                
+
+                    
+
+#p_p_id_56_INSTANCE_spqcPrto5Tpr_ .portlet-borderless-container {
+border-width:;
+border-style:
+}
+
+
+
+
+                
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+
+            
+
+        
+
+    </style>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script defer src="https://www.embrapa.br/portal-embrapa-theme/js/bootstrap.min.js"></script>
+    <script defer src="https://www.embrapa.br/portal-embrapa-theme/js/jquery.urlToLink.min.js"></script>
+    <script defer src="https://www.embrapa.br/portal-embrapa-theme/js/jquery.blockUI.js"></script>
+    <script defer src="https://www.embrapa.br/portal-embrapa-theme/js/owl.carousel.min.js"></script>
+    <script defer src="https://www.embrapa.br/portal-embrapa-theme/js/linkify.min.js"></script>
+    <script defer src="https://www.embrapa.br/portal-embrapa-theme/js/linkify-jquery.min.js"></script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v14.0&appId=610646822301063&autoLogAppEvents=1" nonce="gnCPJXuw"></script>
+
+    <script>
+		$(document).ready(function() {
+		    $("#abre-menu").click(function() {
+		        $("body").toggleClass("tp-menu-compacto");
+		        return false;
+		    });
+		
+		    $(".tp-tem-submenu").click(function() {
+		        var current = $(this);
+		        $(this).closest("ul").children("li").each(function() {
+		            $(this).children("a.tp-menu-item-seta-para-cima").each(function() {
+		                if (!$(this).is(current)) {
+		                    $(this).removeClass("tp-menu-item-seta-para-cima");
+		                }
+		            });
+		        });
+		
+		        $(this).toggleClass("tp-menu-item-seta-para-cima");
+		
+		        var submenu = $("ul", $(this).parent());
+		
+		        if (submenu.hasClass("tp-submenu-aberto")) {
+		            submenu.removeClass("tp-submenu-aberto");
+		        } else {
+		            $("ul.tp-submenu-aberto").removeClass("tp-submenu-aberto");
+		            submenu.addClass("tp-submenu-aberto");
+		        }
+		
+		        return false;
+		    });
+		
+		    $("#abre-busca").click(function() {
+		        $("body").toggleClass("tp-busca-compacto");
+		        return false;
+		    });
+		
+		    $("#fecha-janela").click(function() {
+		        $("body").removeClass("tp-menu-compacto");
+		        $("body").removeClass("tp-busca-compacto");
+		        return false;
+		    });
+		
+		    $("#central-conteudo-menu > a").click(function() {
+		        $("#central-conteudo-menu").toggleClass("tp-submenu-multimidia");
+		        return false;
+		    });
+		
+		    $(".sem-limite-de-largura").each(function() {
+		        $(this).parents(".portlet-layout").addClass("tp-portlet-layout-sem-limite-de-largura");
+		    });
+		
+		    $("h2.filtrar-por").click(function() {
+		        $(this).next().toggleClass("filter-visible");
+		    });
+		
+			// Submit do formulario de busca geral
+		    $("#form-busca-geral").submit(function() {
+		        var palavrasChave = $("#palavrasChave", this).val();
+		        if (palavrasChave !== "") {
+		            var action = $(this).attr("action");
+		            palavrasChave = palavrasChave.replace(/[:]/g, "")
+		                .replace(/\(/g, "%28")
+		                .replace(/\)/g, "%29")
+		                .replace(/\//g, "%2F");
+		            action += "busca/" + encodeURIComponent(palavrasChave);
+		            $(this).attr("action", action);
+		            return true;
+		        } else {
+		            return false;
+		        }
+		    });
+		});
+    </script>
+
+</head>
+
+<body class=" yui3-skin-sam controls-visible guest-site signed-out public-page site">
+
+    <a href="#main-content" id="skip-to-content">Pular para o conteúdo</a>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid" id="wrapper">
+
+        <header class="tp-cabecalho-faixa tp-topo-normal">
+            <ul id="acessibilidade-links">
+                <li>
+                    <a accesskey="c" href="#skip-to-content" id="link-conteudo">
+Pular para o conteúdo                        <span>1</span>
+                    </a>
+                </li>
+                <li>
+                    <a accesskey="n" href="#navigation" id="link-navegacao">
+                        Ir para o menu
+                        <span>2</span>
+                    </a>
+                </li>
+                <li>
+                    <a accesskey="q" href="#palavrasChave" id="link-buscar">
+                        Ir para a busca
+                        <span>3</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div id="heading" class="tp-cabecalho">
+                <a class="logo custom-logo" href="https://www.embrapa.br" title="Ir para Portal Embrapa">
+                    <h1 class="site-title">Portal Embrapa</h1>
+                </a>
+                <div class="tp-links-topo">
+                    <div class="nav-busca">
+<nav class="sort-pages modify-pages" id="navigation" role="navigation">
+	<ul aria-label="Páginas do site" role="menubar">
+
+
+			<li  class="" id="layout_387" role="presentation">
+				<a aria-labelledby="layout_387"  href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;home"  role="menuitem" 
+				    class="tp-tem-submenu"
+				>
+				    <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ A Embrapa</span>
+			    </a>
+
+					<ul class="child-menu" role="menu">
+
+
+							<li  class="" id="layout_18723" role="presentation">
+								<a aria-labelledby="layout_18723" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;agropensa"  role="menuitem">Agropensa</a>
+							</li>
+
+
+							<li  class="" id="layout_11217" role="presentation">
+								<a aria-labelledby="layout_11217" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;agencia-de-informacao-tecnologica"  role="menuitem">Agência Embrapa de Informação Tecnológica - Ageitec</a>
+							</li>
+
+
+							<li  class="" id="layout_401" role="presentation">
+								<a aria-labelledby="layout_401" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;atuacao-internacional"  role="menuitem">Atuação internacional</a>
+							</li>
+
+
+							<li  class="" id="layout_408" role="presentation">
+								<a aria-labelledby="layout_408" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;dados-cadastrais"  role="menuitem">Dados cadastrais</a>
+							</li>
+
+
+							<li  class="" id="layout_402" role="presentation">
+								<a aria-labelledby="layout_402" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;dirigentes"  role="menuitem">Dirigentes</a>
+							</li>
+
+
+							<li  class="" id="layout_3227" role="presentation">
+								<a aria-labelledby="layout_3227" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;documentos-institucionais"  role="menuitem">Documentos institucionais</a>
+							</li>
+
+
+							<li  class="" id="layout_405" role="presentation">
+								<a aria-labelledby="layout_405" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;equipe"  role="menuitem">Equipe</a>
+							</li>
+
+
+							<li  class="" id="layout_2451" role="presentation">
+								<a aria-labelledby="layout_2451" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;esclarecimentos-oficiais"  role="menuitem">Esclarecimentos Oficiais</a>
+							</li>
+
+
+							<li  class="" id="layout_8012" role="presentation">
+								<a aria-labelledby="layout_8012" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;estagios-e-concursos"  role="menuitem">Estágios e Concursos</a>
+							</li>
+
+
+							<li  class="" id="layout_434" role="presentation">
+								<a aria-labelledby="layout_434" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;crianca"  role="menuitem">Espaço Criança</a>
+							</li>
+
+
+							<li  class="" id="layout_7516" role="presentation">
+								<a aria-labelledby="layout_7516" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;governanca-corporativa"  role="menuitem">Governança Corporativa</a>
+							</li>
+
+
+							<li  class="" id="layout_411" role="presentation">
+								<a aria-labelledby="layout_411" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;memoria-embrapa"  role="menuitem">Memória Embrapa</a>
+							</li>
+
+
+							<li  class="" id="layout_399" role="presentation">
+								<a aria-labelledby="layout_399" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;missao-visao-e-valores"  role="menuitem">Missão, visão e valores</a>
+							</li>
+
+
+							<li  class="" id="layout_417" role="presentation">
+								<a aria-labelledby="layout_417" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;organograma"  role="menuitem">Organograma</a>
+							</li>
+
+
+							<li  class="" id="layout_11182" role="presentation">
+								<a aria-labelledby="layout_11182" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;relacoes-institucionais"  role="menuitem">Relações Institucionais e Governamentais</a>
+							</li>
+
+
+							<li  class="" id="layout_2199" role="presentation">
+								<a aria-labelledby="layout_2199" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;seb"  role="menuitem">Sistema de Bibliotecas (SEB)</a>
+							</li>
+
+
+							<li  class="" id="layout_2359" role="presentation">
+								<a aria-labelledby="layout_2359" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;snpa"  role="menuitem">SNPA</a>
+							</li>
+
+
+							<li  class="" id="layout_4397" role="presentation">
+								<a aria-labelledby="layout_4397" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;temas"  role="menuitem">Temas</a>
+							</li>
+
+
+							<li  class="" id="layout_2385" role="presentation">
+								<a aria-labelledby="layout_2385" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;transferencia-de-tecnologia"  role="menuitem">Transferência de Tecnologia</a>
+							</li>
+
+
+							<li  class="" id="layout_400" role="presentation">
+								<a aria-labelledby="layout_400" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;embrapa-no-brasil"  role="menuitem">Unidades - Embrapa no Brasil</a>
+							</li>
+
+
+							<li  class="" id="layout_17114" role="presentation">
+								<a aria-labelledby="layout_17114" href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;sobre-a-embrapa"  role="menuitem">Sobre a Embrapa</a>
+							</li>
+					</ul>
+			</li>
+
+
+			<li  class="" id="layout_17074" role="presentation">
+				<a aria-labelledby="layout_17074"  href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;pesquisa"  role="menuitem" 
+				>
+				    <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Pesquisa</span>
+			    </a>
+
+			</li>
+
+
+			<li  class="" id="layout_17077" role="presentation">
+				<a aria-labelledby="layout_17077"  href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;inovacao"  role="menuitem" 
+				>
+				    <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Inovação</span>
+			    </a>
+
+			</li>
+
+
+			<li  class="" id="layout_17078" role="presentation">
+				<a aria-labelledby="layout_17078"  href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;tecnologias"  role="menuitem" 
+				>
+				    <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Tecnologias</span>
+			    </a>
+
+			</li>
+
+
+			<li  class="" id="layout_6846" role="presentation">
+				<a aria-labelledby="layout_6846"  href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;publicacoes-e-bibliotecas"  role="menuitem" 
+				>
+				    <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Publicações e Bibliotecas</span>
+			    </a>
+
+			</li>
+
+
+			<li  class="" id="layout_420" role="presentation">
+				<a aria-labelledby="layout_420"  href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;cursos-e-eventos"  role="menuitem" 
+				>
+				    <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Cursos e Eventos</span>
+			    </a>
+
+			</li>
+
+
+			<li  class="" id="layout_2253" role="presentation">
+				<a aria-labelledby="layout_2253"  href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;acessoainformacao"  role="menuitem" 
+				>
+				    <span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Acesso à informação</span>
+			    </a>
+
+			</li>
+	</ul>
+</nav>                    </div>
+
+                            <ul class="tp-links-topo-conteudo">
+	<li><a href="/noticias">Notícias</a></li>
+	<li id="central-conteudo-menu"><a>Multimídia</a>
+	<ul>
+		<li><a href="/videos">Vídeos</a></li>
+		<li><a href="/podcasts">Podcasts</a></li>
+		<li><a href="/imagens">Imagens</a></li>
+	</ul>
+	</li>
+	<li><a href="/paginas-especiais">Páginas especiais</a></li>
+</ul>
+
+<ul class="tp-links-topo-contatos">
+	<li><a href="/fale-conosco">Fale conosco</a></li>
+	<li><a href="/sala-de-imprensa">Sala de imprensa</a></li>
+</ul>
+
+                    <div class="tp-links-topo-icones">
+
+                        <ul>
+                            <li>
+                                <div class="paises language-selector">
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_82_  portlet-static portlet-static-end portlet-language " id="p_p_id_82_" >
+		<span id="p_82"></span>
+
+
+
+	
+	
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+				
+<section class="portlet" id="portlet_82">
+	<header class="portlet-topper">
+		<h1 class="portlet-title">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<span class=""
+			
+				onmouseover="Liferay.Portal.ToolTip.show(this, 'Língua')"
+			
+		>
+			
+				
+				
+					
+	
+		
+		
+			
+				
+					
+						
+							<img id="rjus__null__null" src="https://www.embrapa.br/portal-embrapa-theme/images/spacer.png"  alt="" style="background-image: url('https://www.embrapa.br/sprite/html/icons/_sprite.png'); background-position: 50% -528px; background-repeat: no-repeat; height: 16px; width: 16px;" lang="" />
+						
+						
+					
+				
+				
+			
+		
+	
+
+	
+		
+		
+			<span class="taglib-text hide-accessible">Língua</span>
+		
+	
+
+				
+			
+		</span>
+	
+
+
+
+
+ <span class="portlet-title-text">Língua</span>
+		</h1>
+
+		<menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_82" type="toolbar">
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+	
+
+		</menu>
+	</header>
+
+	<div class="portlet-content">
+		
+					<div class=" portlet-content-container" >
+						
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+					
+						
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+		
+
+			
+				
+					
+						
+							<span class="taglib-language-list-text" lang="pt-BR">português</span>
+						
+						
+					
+				
+				
+			
+
+		
+
+			
+				
+					
+						
+						
+							<a href="https&#x3a;&#x2f;&#x2f;www&#x2e;embrapa&#x2e;br&#x2f;home&#x3f;p_auth&#x3d;3U1DxsXX&#x26;p_p_id&#x3d;82&#x26;p_p_lifecycle&#x3d;1&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_82_struts_action&#x3d;&#x25;2Flanguage&#x25;2Fview&#x26;_82_redirect&#x3d;&#x25;2Fdocuments&#x25;2F1355202&#x25;2F46146682&#x25;2Fmilho&#x25;2Bfoto&#x2e;jpg&#x25;2F57b69664-a31d-23df-a480-6c613fa98e1d&#x25;3Ft&#x25;3D1584117949317&#x26;_82_languageId&#x3d;en_US" class="taglib-language-list-text last" lang="en-US" >English</a>
+						
+					
+				
+				
+			
+
+		
+
+	
+
+	
+
+					
+				
+			
+		
+	
+	
+
+
+
+	</div>
+
+					</div>
+				
+	</div>
+</section>
+			
+			
+		
+	
+
+
+	
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+                                </div>
+                            </li>
+                            <li>
+                                <a id="alto_contraste_id" class="contraste_off tp-link-contraste" href="https://www.embrapa.br/acessibilidade" title="Contraste" accesskey="4">
+                                    <i class="bi bi-circle-half"></i>
+                                </a>
+                            </li>
+                                <li class="tp-link-entrar"> <a href="/login?p_p_id=58&p_p_lifecycle=0&_58_redirect=%2Fdocuments%2F1355202%2F46146682%2Fmilho%2Bfoto.jpg%2F57b69664-a31d-23df-a480-6c613fa98e1d%3Ft%3D1584117949317" data-redirect="false" title="Login"><i class="bi bi-person-circle"></i><span>Entrar</span></a> </li>
+                            <li class="tp-link-topo-busca"> <button id="abre-busca"><i class="bi bi-search"></i></button> </li>
+                            <li class="tp-link-topo-fecha"> <button id="fecha-janela"><i class="bi bi-x"></i></button> </li>
+                            <li class="tp-link-topo-menu"> <button id="abre-menu"><i class="bi bi-list"></i></button> </li>
+                        </ul>
+                    </div>
+
+                    <div class="tp-busca-geral">
+                        <form action="/busca-geral/-/" class="tp-busca-geral-conteudo" method="get" id="form-busca-geral">
+                            <input accesskey="3" name="buscaPortal" id="palavrasChave" class="tp-campo-busca-geral" type="text">
+                            <input type="submit" class="tp-botao-busca-geral button rounded" id="botao-busca-geral" value=" ">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="main-content">
+
+            <!-- Topo do site para Unidades nao tem nenhuma classe com tp cabecalho unidade
+            <div id="heading-unidade" class="tp-cabecalho-unidade">
+
+            </div>
+            -->
+
+
+                <div class="tp-pagina-infos tp-topo-normal" style="background-image: url('https://www.embrapa.br/documents/10180/1342847/fundo-azul.jpg/e6da7e36-bcb3-264a-78ac-6f8b0bae14bd?t=1648931121972')" >
+                    <div class="tp-cabecalho-conteudo">
+
+
+                    </div>
+                </div>
+
+            <div id="content" class="">
+                    
+
+                    
+
+                    <div class="column-1" id="main-content" role="main">
+<section class="portlet" id="portlet_status">
+	<header class="portlet-topper">
+		<h1 class="portlet-title">
+			 <span class="portlet-title-text">Estado</span>
+		</h1>
+
+		<menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_status" type="toolbar">
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		</menu>
+	</header>
+
+	<div class="portlet-content">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+        <h3 class="alert alert-error">
+            Não encontrado
+        </h3>
+
+        O recurso requisitado não foi encontrado.
+
+        <br /><br />
+
+        <code class="lfr-url-error">https://www.embrapa.br/documents/1355202/46146682/milho+foto.jpg/57b69664-a31d-23df-a480-6c613fa98e1d?t=1584117949317</code>
+        
+        
+        
+        
+        
+    
+    
+
+
+<div class="separator"><!-- --></div>
+
+<a href="javascript:history.go(-1);">&laquo; Voltar</a>
+
+
+	</div>
+</section></div>
+            </div>
+
+        </section>
+
+
+        <footer class="tp-rodape">
+            <section class="tp-rodape-itens">
+                <div>
+                    <div class="tp-rodape-marca">
+						<img src="/image/layout_set_logo?img_id=1343656&amp;t=1744972832334" alt="Marca Embrapa" />
+                        <div class="tp-rodape-endereco">
+                                    <p>Empresa Brasileira de Pesquisa Agropecuária</p>
+
+<p>Parque Estação Biológica - PqEB, s/nº, Brasília, DF</p>
+
+<p>CEP 70770-901 / Telefone (61) 3448-4433</p>
+                        </div>
+                    </div>
+                    <div class="tp-rodape-redes-sociais">
+                        <div class="siga-redes-sociais">Siga a Embrapa <br /> nas redes sociais</div>
+                        <ul>
+                            <li>
+                                <a href="/youtube" title="YouTube">
+                                    <span class="tp-rodape-redes-item"><i class="bi-youtube"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/x" title="X">
+                                    <span class="tp-rodape-redes-item"><i class="bi-twitter-x"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/facebook-embrapa" title="Facebook">
+                                    <span class="tp-rodape-redes-item"><i class="bi-facebook"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/flickr" title="Flickr">
+                                    <span class="tp-rodape-redes-item"><i class="flickr"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/instagram" title="Instagram">
+                                    <span class="tp-rodape-redes-item"><i class="bi-instagram"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://br.linkedin.com/company/embrapa" title="LinkedIn">
+                                    <span class="tp-rodape-redes-item"><i class="bi-linkedin"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                        <ul class="tp-rodape-menu">
+	<li class="tp-rodape-menu-item">
+	<div>Para empresas e startups</div>
+
+	<ul>
+		<li><a href="/ativos-para-parcerias#cooperacao-com-a-embrapa">Como fazer parceria com a Embrapa</a></li>
+		<li><a href="/ativos-para-parcerias">Ativos disponíveis para parcerias</a></li>
+		<li><a href="/licenciamento">Licenciamento de tecnologias Embrapa</a></li>
+		<li><a href="/financiamentos-desafios-e-programas-de-inovacao">Financiamento, desafios e programas</a></li>
+	</ul>
+	</li>
+	<li class="tp-rodape-menu-item">
+	<div>Para produtores e técnicos</div>
+
+	<ul>
+		<li><a href="/conteudos-tecnicos">Conteúdos técnicos</a></li>
+		<li><a href="/tecnologias">Catálogo de tecnologias</a></li>
+		<li><a href="/como-comprar-ou-ter-acesso-a-tecnologias">Como comprar ou ter acesso a tecnologias</a></li>
+		<li><a href="/cultivos-criacoes-e-sistemas-de-producao">Cultivos e criações | Sistemas de produção - Ageitec</a></li>
+	</ul>
+	</li>
+	<li class="tp-rodape-menu-item">
+	<div>Para pesquisadores e estudantes</div>
+
+	<ul>
+		<li><a href="/publicacoes-cientificas">Publicações científicas</a></li>
+		<li><a href="/pesquisa-e-desenvolvimento/portfolios">Portfólios de projetos</a></li>
+		<li><a href="/dados-de-pesquisa">Dados de pesquisa</a></li>
+		<li><a href="/acessoainformacao/carta-de-servicos-ao-cidadao/servicos">Serviços laboratoriais e de acesso a materiais</a></li>
+		<li><a href="/seb/servicos">Serviços de bibliotecas</a></li>
+	</ul>
+	</li>
+	<li class="tp-rodape-menu-item">
+	<div>Institucional</div>
+
+	<ul>
+		<li><a href="/sobre-a-embrapa">Sobre a Embrapa</a></li>
+		<li><a href="/dirigentes">Dirigentes</a></li>
+		<li><a href="/embrapa-no-brasil">Embrapa no Brasil</a></li>
+		<li><a href="/embrapa-em-numeros">Embrapa em números</a></li>
+		<li><a href="/atuacao-internacional">Atuação internacional</a></li>
+		<li><a href="/relacoes-institucionais">Relações institucionais</a></li>
+		<li><a href="/organograma">Organograma</a></li>
+		<li><a href="/estagios-e-concursos">Estágios e concursos</a></li>
+	</ul>
+	</li>
+	<li class="tp-rodape-menu-item">
+	<div>Atendimento</div>
+
+	<ul>
+		<li><a href="/fale-conosco">Fale conosco (SAC)</a></li>
+		<li><a href="/acessoainformacao/servico-de-informacao-ao-cidadao-sic">Serviço de Informação ao Cidadão (SIC)</a></li>
+		<li><a href="/ouvidoria">Ouvidoria</a></li>
+		<li><a href="/codigo-de-etica">Comissão de Ética</a></li>
+		<li><a href="/comite-de-auditoria-da-embrapa">Comitê de Auditoria</a></li>
+		<li><a href="/sala-de-imprensa">Sala de imprensa</a></li>
+	</ul>
+	</li>
+	<li class="tp-rodape-menu-item">
+	<div>Transparência e serviços</div>
+
+	<ul>
+		<li><a href="/acessibilidade">Acessibilidade</a></li>
+		<li><a href="/mapa-do-site">Mapa do site</a></li>
+		<li><a href="/acessoainformacao/transparencia-e-prestacao-de-contas">Transparência e prestação de contas</a></li>
+		<li><a href="/documentos-institucionais-e-atos-oficiais">Documentos institucionais e atos oficiais</a></li>
+		<li><a href="/acessoainformacao/carta-de-servicos-ao-cidadao">Carta de Serviços ao Cidadão</a></li>
+		<li><a href="/sei-sistema-eletronico-de-informacoes">Acesso externo SEI</a></li>
+		<li><a href="/acessoainformacao/licitacoes-e-contratos">Licitações e contratos</a></li>
+	</ul>
+	</li>
+</ul>
+
+            </section>
+            <section class="tp-rodape-rodape">
+                <div>
+                    <div class="tp-rodape-direitos">
+                        <p>Todos os direitos reservados, conforme Lei nº 9.610</p>
+                        <p>Portal Embrapa (Versão 3.157.0) p02</p>
+                    </div>
+
+                    <div class="tp-rodape-login">
+                        <a class="tp-botao" href="/acesso-restrito" >Acesso restrito</a>
+                            <a class="tp-botao" href="/login?p_p_id=58&p_p_lifecycle=0&_58_redirect=%2Fdocuments%2F1355202%2F46146682%2Fmilho%2Bfoto.jpg%2F57b69664-a31d-23df-a480-6c613fa98e1d%3Ft%3D1584117949317" id="sign-in" rel="nofollow">Entrar</a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+				<script src="https://www.embrapa.br/notifications-portlet/notifications/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=pt_BR&amp;b=6210&amp;t=1744972301000" type="text/javascript" defer></script>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	Liferay.Util.addInputFocus();
+
+	
+
+	
+		
+		
+
+			
+
+			
+		
+	
+
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+		
+
+		
+	
+
+
+<script type="text/javascript">
+// <![CDATA[
+
+	
+		Liferay.Portlet.register('82');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_82_',
+			portletId: '82',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d1343662\x26p_p_id\x3d82\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fdocuments\x252F1355202\x252F46146682\x252Fmilho\x252Bfoto\x2ejpg\x252F57b69664-a31d-23df-a480-6c613fa98e1d\x253Ft\x253D1584117949317\x26t\x3d1584117949317\x26t\x3d1584117949317'
+		}
+	);
+AUI().use('aui-base', 'liferay-menu', 'liferay-notice', 'liferay-poller', 'liferay-session', function(A) {(function() {
+Liferay.provide(
+		window,
+	    'ajaxableSearchContainer',
+	     function(mainContainerSelector, bindEventsCallback, runOnceCallback) {
+
+	        var mainContainer = A.one(mainContainerSelector);
+	        var loaderContainerId = undefined;
+	        var loaderContainer = undefined;
+
+	        /* Loader */
+	        if (mainContainer) {
+	            loaderContainerId = mainContainer.attr('id') + "Loader";
+	            loaderContainer = A.one("#"+loaderContainerId);
+	            if (!loaderContainer ) {
+	                var nodeContent = '<div id="'+loaderContainerId+'"><div class="loading-animation" /></div></div>';
+	                loaderContainer = A.Node.create(nodeContent);
+	                mainContainer.placeAfter(loaderContainer);
+	            }
+	        }
+
+	        var stopLoaderContainer = function() {
+	            loaderContainer.html('');
+	        };
+
+	        var startLoad = function() {
+	            try {
+	                mainContainer.html('');
+	                var nodeContent = '<div class="loading-animation" />';
+	                loaderContainer.setHTML(A.Node.create(nodeContent));
+	            } catch(e) {
+	                console.log(e);
+	            }
+	        };
+
+	        /* URL Lifecycle */
+	        var changeLifecycle = function(element) {
+	            if (element) {
+	                element.all('a').on(
+	                    'click',
+	                    function(event) {
+	                        event.preventDefault();
+	                        var uri = event.currentTarget.get('href');
+	                        if (uri != 'javascript:;') {
+	                             uri = event.currentTarget.get('href').replace(/p_p_lifecycle=0/i, 'p_p_lifecycle=2');
+	                             uriLoadData(uri);
+	                         }
+	                    }
+	                );
+	            }
+	        };
+
+	        /* Events */
+	        var bindEvents = function() {
+	            var paginator = mainContainer.all('.taglib-search-iterator-page-iterator-bottom,.taglib-search-iterator-page-iterator-top,.lfr-pagination-page-selector,.lfr-pagination-delta-selector');
+	            changeLifecycle(paginator);
+
+	            var paginationSelector = mainContainer.all('.lfr-pagination-page-selector,.lfr-pagination-delta-selector');
+	            if (paginationSelector) {
+	                changeLifecycle(paginationSelector.all('ul.dropdown-menu'));
+	                paginationSelector.all('a.dropdown-toggle').each(
+	                    function(item, index) {
+	                        Liferay.Menu.register(item.attr("id"));
+	                    }
+	                );
+	            }
+
+	            if (bindEventsCallback) {
+	                try { bindEventsCallback(loadData); } catch (e) { console.log(e); }
+	            }
+	        };
+
+	        /* Load data proxy */
+	        var loadData = function(actionType, value) {
+	           if (actionType) {
+		           if (actionType.toLowerCase() === 'url') {
+		               uriLoadData(value);
+		           }
+				   if (actionType.toLowerCase() === 'form') {
+	                   formLoadData(value);
+		           }
+		       }
+	        };
+
+	        /* Data loader using URI */
+	        var uriLoadData = function(uri) {
+	            A.io.request(
+	                uri,
+	                {
+	                    after: {
+	                        success: function(event, id, obj) {
+	                            var responseData = this.get('responseData');
+	                            mainContainer.html(responseData);
+	                            bindEvents();
+	                            stopLoaderContainer();
+	                        },
+	                        failure: function(event, id, obj) {
+	                            stopLoaderContainer();
+	                        }
+	                    },
+	                    on: {
+	                        start: startLoad
+	                    }
+	                }
+	            );
+	        };
+
+			/* Data loader submitting a form */
+			var formLoadData = function(fm) {
+				var form = A.one(fm);
+				A.io.request(
+					form.get('action'),
+					{
+						method: 'post',
+						form: {
+							id: form.attr('id')
+						},
+						after: {
+							success: function(event, id, obj) {
+								var responseData = this.get('responseData');
+								mainContainer.html(responseData);
+								bindEvents();
+								stopLoaderContainer();
+							},
+							failure: function(event, id, obj) {
+								stopLoaderContainer();
+							}
+						},
+						on: {
+							start: startLoad
+						}
+					}
+				);
+			};
+
+	        /* Load first bunch of data */
+	        if (mainContainer) {
+	            uriLoadData(mainContainer.attr('data-url'));
+
+	            /* Call run once callback function */
+	            if (runOnceCallback) {
+	                /* console.log('runonce'); */
+	                try { runOnceCallback(loadData); } catch (e) { console.log(e); }
+	            }
+	        }
+	    },
+	    ['aui-base', 'node', 'aui-io-request']
+	);
+})();(function() {
+	Liferay.Util.addInputType();
+
+	Liferay.Portlet.ready(
+		function(portletId, node) {
+			Liferay.Util.addInputType(node);
+		}
+	);
+
+	if (A.UA.mobile) {
+		Liferay.Util.addInputCancel();
+	}
+})();(function() {
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 1; i < liferayNotices.length; i++) {
+		new Liferay.Notice(liferayNotices[i]);
+	}
+
+	
+})();(function() {
+			Liferay.Session = new Liferay.SessionBase(
+				{
+					autoExtend: true,
+					sessionLength: 7200,
+					redirectOnExpire: false,
+					redirectUrl: 'https\x3a\x2f\x2fwww\x2eembrapa\x2ebr\x2fweb\x2fportal',
+					warningLength: 0
+				}
+			);
+
+			
+		})();});
+// ]]>
+</script>
+
+
+
+
+
+
+
+
+
+<script src="https://www.embrapa.br/portal-embrapa-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=pt_BR&amp;b=6210&amp;t=1742320517000" type="text/javascript"></script>
+
+
+
+	
+
+	
+
+	<script type="text/javascript">
+		// <![CDATA[
+			
+
+			
+		// ]]>
+	</script>
+
+
+
+	
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function loadImgSrcData(t,e){if(e&&e.getAttribute(t)){var a=e.getAttribute(t);if(e.getAttribute("data-manchete-id")){var i=e.getAttribute("data-manchete-id");i&&(e.addEventListener("load",function(){ajustaImagemDaManchete(i)},!1),e.removeAttribute("data-manchete-id"))}e.setAttribute("src",a),e.clientWidth>0&&(a+="&width="+e.clientWidth),e.setAttribute("src",a),e.removeAttribute(t)}}
+function loadBackgroundImgUrl(t,e){if(e.getAttribute(t)){var a=e.getAttribute(t);e.clientWidth>0&&(a+="&width="+e.clientWidth),e.setAttribute("style","background-image: url('"+a+"');"),e.removeAttribute(t)}}
+function loadResponsiveImage(t){var e=t.getElementsByClassName("img-responsive");if(e&&e.length>0)for(var a=0,i=e.length;a<i;a++)loadImgSrcData("data-src",e[a]),loadBackgroundImgUrl("data-img-src",e[a])}
+function ajustaImagemDaManchete(t){var e=document.querySelector("#abstract-manchete-"+t);if(e){e.classList.add("imagem");var a=e.querySelector(".asset-small-image");a&&e.style.minHeight<a.offsetHeight&&(e.style.minHeight=a.offsetHeight+"px")}}
+window.addEventListener?window.addEventListener("load",loadResponsiveImage(document)):window.attachEvent("onload",loadResponsiveImage(document));
+
+
+
+function initIframe(){for (var t=document.getElementsByTagName("iframe"),e=0;e<t.length;e++)t[e].getAttribute("data-src")&&t[e].setAttribute("src",t[e].getAttribute("data-src"))}
+window.addEventListener?window.addEventListener("load",initIframe()):window.attachEvent("onload",initIframe());
+</script>
+
+
+    <div class="lgpd">
+        
+    </div>
+	<script defer src="https://www.embrapa.br/portal-embrapa-theme/js/jquery.jcarousellite.min.js"></script>
+</body>
+
+</html>
+

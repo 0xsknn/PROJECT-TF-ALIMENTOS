@@ -20,12 +20,6 @@ const productImages = [
     src: "/images/arroz3333.jpg",
     thumbnail: "/images/arroz3333.jpg",
     alt: "Arroz com Casca - Detalhe Próximo"
-  },
-  {
-    id: 4,
-    src: "/images/arroz2.png",
-    thumbnail: "/images/arroz2.png",
-    alt: "Arroz - Produção"
   }
 ];
 
