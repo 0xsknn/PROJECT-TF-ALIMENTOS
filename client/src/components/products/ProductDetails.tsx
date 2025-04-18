@@ -51,7 +51,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     <tbody>
                       <tr className="border-b border-gray-300">
                         <td className="py-2 font-semibold">Classificação</td>
-                        <td className="py-2">Tipo 1, Longo Fino</td>
+                        <td className="py-2">{product.category === 'soja' ? 'Soja Grão, Não Transgênica' : product.category === 'milho' ? 'Milho Amarelo, Tipo 1' : 'Tipo 1, Longo Fino'}</td>
                       </tr>
                       <tr className="border-b border-gray-300">
                         <td className="py-2 font-semibold">Umidade</td>
@@ -126,20 +126,56 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   <div className="lg:col-span-2">
                     <h3 className="font-heading font-semibold text-xl mb-4">Sobre o Produto</h3>
-                    <p className="mb-4">
-                      Nosso arroz com casca é um produto premium, resultado de cuidadoso processo de cultivo. 
-                      Mantido em sua forma natural com a casca protetora intacta, este produto serve como 
-                      matéria-prima para diversos processos na indústria de alimentos e pode ser armazenado 
-                      por períodos mais longos.
-                    </p>
-                    <p className="mb-4">
-                      Cultivado em terras férteis e com controle rigoroso de temperatura e umidade, nosso arroz apresenta 
-                      características superiores em termos de rendimento, aparência e sabor.
-                    </p>
-                    <p>
-                      O baixo percentual de grãos quebrados e impurezas é resultado de técnicas avançadas de colheita e 
-                      processamento, assegurando um produto final que atende às mais exigentes especificações do mercado.
-                    </p>
+                    {product.category === 'soja' ? (
+                      <>
+                        <p className="mb-4">
+                          Nossa soja em grão não transgênica é um produto premium, resultado de cuidadoso processo de cultivo. 
+                          Com alto teor de proteínas e nutrientes, nossa soja é ideal para processamento industrial e 
+                          produção de alimentos derivados.
+                        </p>
+                        <p className="mb-4">
+                          Cultivada em terras férteis e com controle rigoroso de práticas agrícolas sustentáveis, nossa soja apresenta 
+                          características superiores em termos de qualidade, uniformidade e valor nutricional.
+                        </p>
+                        <p>
+                          O baixo índice de impurezas é resultado de técnicas avançadas de colheita e 
+                          processamento, assegurando um produto final que atende às mais exigentes especificações do mercado.
+                        </p>
+                      </>
+                    ) : product.category === 'milho' ? (
+                      <>
+                        <p className="mb-4">
+                          Nosso milho de alta qualidade é cultivado seguindo rigorosos padrões de produção. 
+                          Com grãos uniformes e nutritivos, nosso produto é ideal para diversas aplicações industriais
+                          e alimentação animal.
+                        </p>
+                        <p className="mb-4">
+                          Cultivado com tecnologias modernas e sustentáveis, nosso milho apresenta 
+                          características superiores em termos de rendimento e valor nutricional.
+                        </p>
+                        <p>
+                          O controle rigoroso de qualidade garante baixos índices de impurezas e contaminantes,
+                          atendendo às mais exigentes especificações do mercado.
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="mb-4">
+                          Nosso arroz com casca é um produto premium, resultado de cuidadoso processo de cultivo. 
+                          Mantido em sua forma natural com a casca protetora intacta, este produto serve como 
+                          matéria-prima para diversos processos na indústria de alimentos e pode ser armazenado 
+                          por períodos mais longos.
+                        </p>
+                        <p className="mb-4">
+                          Cultivado em terras férteis e com controle rigoroso de temperatura e umidade, nosso arroz apresenta 
+                          características superiores em termos de rendimento, aparência e sabor.
+                        </p>
+                        <p>
+                          O baixo percentual de grãos quebrados e impurezas é resultado de técnicas avançadas de colheita e 
+                          processamento, assegurando um produto final que atende às mais exigentes especificações do mercado.
+                        </p>
+                      </>
+                    )}
                   </div>
                   
                   <div>
@@ -254,7 +290,11 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
               <TabsContent value="applications">
                 <h3 className="font-heading font-semibold text-xl mb-4">Aplicações e Usos</h3>
                 <p className="mb-6">
-                  O arroz com casca é versátil e pode ser utilizado em diversas aplicações na indústria alimentícia após processamento:
+                  {product.category === 'soja' ? 
+                    'A soja em grão é versátil e pode ser utilizada em diversas aplicações na indústria alimentícia e outros setores:' : 
+                  product.category === 'milho' ?
+                    'O milho é um grão versátil e pode ser utilizado em diversas aplicações industriais e alimentação animal:' :
+                    'O arroz com casca é versátil e pode ser utilizado em diversas aplicações na indústria alimentícia após processamento:'}
                 </p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -268,10 +308,28 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </div>
                     <h4 className="font-heading font-semibold text-lg mb-2">Indústria Alimentícia</h4>
                     <ul className="space-y-2">
-                      <li>• Beneficiamento para arroz branco</li>
-                      <li>• Produção de arroz integral</li>
-                      <li>• Matéria-prima para alimentos processados</li>
-                      <li>• Fabricação de produtos derivados</li>
+                      {product.category === 'soja' ? (
+                        <>
+                          <li>• Produção de óleo de soja</li>
+                          <li>• Fabricação de farelo e proteína isolada</li>
+                          <li>• Produção de alimentos derivados (tofu, leite, etc.)</li>
+                          <li>• Ingrediente para rações animais</li>
+                        </>
+                      ) : product.category === 'milho' ? (
+                        <>
+                          <li>• Produção de fubá e farinha de milho</li>
+                          <li>• Fabricação de ração animal</li>
+                          <li>• Produção de xarope de milho</li>
+                          <li>• Indústria de biocombustíveis</li>
+                        </>
+                      ) : (
+                        <>
+                          <li>• Beneficiamento para arroz branco</li>
+                          <li>• Produção de arroz integral</li>
+                          <li>• Matéria-prima para alimentos processados</li>
+                          <li>• Fabricação de produtos derivados</li>
+                        </>
+                      )}
                     </ul>
                   </div>
                   
@@ -306,10 +364,28 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </div>
                     <h4 className="font-heading font-semibold text-lg mb-2">Outros Usos</h4>
                     <ul className="space-y-2">
-                      <li>• Armazenamento antes do processamento</li>
-                      <li>• Plantio para agricultura</li>
-                      <li>• Pesquisa e desenvolvimento de novas variedades</li>
-                      <li>• Produção de sementes</li>
+                      {product.category === 'soja' ? (
+                        <>
+                          <li>• Biodiesel e outros biocombustíveis</li>
+                          <li>• Indústria farmacêutica e cosméticos</li>
+                          <li>• Aplicações industriais diversas</li>
+                          <li>• Sementes para plantio</li>
+                        </>
+                      ) : product.category === 'milho' ? (
+                        <>
+                          <li>• Produção de etanol</li>
+                          <li>• Plastificantes biodegradáveis</li>
+                          <li>• Indústria de cosméticos</li>
+                          <li>• Produção de sementes para plantio</li>
+                        </>
+                      ) : (
+                        <>
+                          <li>• Armazenamento antes do processamento</li>
+                          <li>• Plantio para agricultura</li>
+                          <li>• Pesquisa e desenvolvimento de novas variedades</li>
+                          <li>• Produção de sementes</li>
+                        </>
+                      )}
                     </ul>
                   </div>
                 </div>
