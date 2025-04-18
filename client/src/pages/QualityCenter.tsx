@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Download, CheckCircle } from "lucide-react";
 import { certifications } from "@/data/certifications";
 import ContactCTA from "@/components/home/ContactCTA";
+import labImage from "@assets/arrozcasca.jpg";
 
 const QualityCenter = () => {
   const [activeTab, setActiveTab] = useState("certifications");
@@ -87,7 +88,7 @@ const QualityCenter = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80" 
+                  src={labImage} 
                   alt="Laboratório de Qualidade" 
                   className="w-full h-auto rounded-lg shadow-lg mb-6"
                 />
@@ -156,21 +157,9 @@ const QualityCenter = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "Arroz Beneficiado",
+                    title: "Arroz com Casca",
                     code: "LAU-ARZ-001",
                     date: "15/04/2023",
-                    icon: "📄"
-                  },
-                  {
-                    title: "Arroz Integral",
-                    code: "LAU-ARZ-002",
-                    date: "22/04/2023",
-                    icon: "📄"
-                  },
-                  {
-                    title: "Arroz Parboilizado",
-                    code: "LAU-ARZ-003",
-                    date: "05/05/2023",
                     icon: "📄"
                   },
                   {
@@ -180,14 +169,8 @@ const QualityCenter = () => {
                     icon: "📄"
                   },
                   {
-                    title: "Soja Não Transgênica",
-                    code: "LAU-SOJ-002",
-                    date: "10/04/2023",
-                    icon: "📄"
-                  },
-                  {
-                    title: "Análise de Micotoxinas",
-                    code: "LAU-MIC-001",
+                    title: "Milho",
+                    code: "LAU-MIL-001",
                     date: "30/03/2023",
                     icon: "📄"
                   }
