@@ -214,8 +214,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-heading font-semibold text-lg">Endereço</h3>
                       <p className="text-gray-600">
-                        Rod. BR 101, Km 123 - Zona Industrial<br />
-                        Joinville, SC - CEP 89000-000
+                        Rodovia BR-153 Parte Desmembrada 11 Remanescente Area 1 - Zona de Extensao Urbana<br />
+                        Cariri do Tocantins, TO - CEP 77453-000
                       </p>
                     </div>
                   </div>
@@ -227,8 +227,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-heading font-semibold text-lg">Telefone</h3>
                       <p className="text-gray-600">
-                        (47) 3123-4567<br />
-                        (47) 98765-4321
+                        (63) 98125-0698
                       </p>
                     </div>
                   </div>
@@ -240,8 +239,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-heading font-semibold text-lg">Email</h3>
                       <p className="text-gray-600">
-                        contato@tfalimentos.com.br<br />
-                        comercial@tfalimentos.com.br
+                        tfalimentosltda1@gmail.com
                       </p>
                     </div>
                   </div>
@@ -287,15 +285,15 @@ const Contact = () => {
                   <div className="space-y-4">
                     <div>
                       <h4 className="font-heading font-semibold">Vendas Corporativas</h4>
-                      <p className="text-gray-600 text-sm">comercial@tfalimentos.com.br</p>
+                      <p className="text-gray-600 text-sm">tfalimentosltda1@gmail.com</p>
                     </div>
                     <div>
                       <h4 className="font-heading font-semibold">Recursos Humanos</h4>
-                      <p className="text-gray-600 text-sm">rh@tfalimentos.com.br</p>
+                      <p className="text-gray-600 text-sm">tfalimentosltda1@gmail.com</p>
                     </div>
                     <div>
                       <h4 className="font-heading font-semibold">Suporte Técnico</h4>
-                      <p className="text-gray-600 text-sm">suporte@tfalimentos.com.br</p>
+                      <p className="text-gray-600 text-sm">tfalimentosltda1@gmail.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -308,14 +306,14 @@ const Contact = () => {
           <h2 className="font-heading font-bold text-2xl mb-6 text-center">Nossa Localização</h2>
           <div className="h-[400px] rounded-lg overflow-hidden">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.5478488047124!2d-48.846945024551714!3d-26.22967197991455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94de94ba77843283%3A0x28c7c21c14846d0a!2sJoinville%2C%20SC!5e0!3m2!1spt-BR!2sbr!4v1689125646512!5m2!1spt-BR!2sbr" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.8879125647695!2d-48.69483208953723!3d-11.284374747747286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x934304e38f3b4033%3A0x84c36ea2a5b93181!2sCariri%20do%20Tocantins%2C%20TO%2C%2077453-000!5e0!3m2!1spt-BR!2sbr!4v1713022225358!5m2!1spt-BR!2sbr" 
               width="100%" 
               height="400" 
               style={{ border: 0 }} 
               allowFullScreen 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa da localização da TF Alimentos"
+              title="Mapa da localização da TF Alimentos em Cariri do Tocantins"
             ></iframe>
           </div>
         </div>
