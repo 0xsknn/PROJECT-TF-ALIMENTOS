@@ -27,22 +27,22 @@ const Footer = () => {
               <span className="text-xl font-heading font-bold">TF Alimentos</span>
             </div>
             <p className="mb-4 text-gray-400">
-              Qualidade em grãos há mais de 20 anos, fornecendo os melhores produtos para indústria e distribuição.
+              Qualidade em grãos há mais de 5 anos, fornecendo os melhores produtos para indústria e distribuição.
             </p>
             <div className="flex items-center mb-4">
               <MapPin className="text-yellow-500 mr-2 h-5 w-5" />
               <span>
-                Rod. BR 101, Km 123 - Zona Industrial<br />
-                Joinville, SC - CEP 89000-000
+                Rodovia BR-153 Parte Desmembrada 11 Remanescente Area 1 - Zona de Extensao Urbana<br />
+                Cariri do Tocantins, TO - CEP 77453-000
               </span>
             </div>
             <div className="flex items-center mb-4">
               <Phone className="text-yellow-500 mr-2 h-5 w-5" />
-              <span>(47) 3123-4567</span>
+              <span>(63) 98125-0698</span>
             </div>
             <div className="flex items-center">
               <Mail className="text-yellow-500 mr-2 h-5 w-5" />
-              <span>contato@tfalimentos.com.br</span>
+              <span>tfalimentosltda1@gmail.com</span>
             </div>
           </div>
           
