@@ -15,7 +15,7 @@ interface SlideItem {
 const bannerSlides: SlideItem[] = [
   {
     id: 1,
-    imageUrl: "/images/milhooo.jpg",
+    imageUrl: "/images/agricultores-arroz.png",
     title: "Qualidade em Grãos para sua Indústria",
     description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
     buttonText: "Conheça Nossos Produtos",
