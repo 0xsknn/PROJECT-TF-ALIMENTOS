@@ -9,13 +9,19 @@ export interface TeamMember {
   twitter?: string;
 }
 
+// Importar a imagem local disponível
+import memberImage from "@assets/Pedro-Stropasolas-Brasil-de-Fato.jpeg";
+import arrozImage from "@assets/arrozcasca.jpg";
+import arrozCascaImage from "@assets/Casca-de-arroz-caida.webp";
+import cultivoArrozImage from "@assets/culitvoarroz.jpg";
+
 export const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: "Carlos Teixeira",
     position: "Diretor Presidente",
     bio: "Com mais de 30 anos de experiência no agronegócio, lidera a visão estratégica da empresa.",
-    imageUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80",
+    imageUrl: memberImage,
     email: "carlos.teixeira@tfalimentos.com.br",
     linkedin: "https://linkedin.com/in/carlosteixeira"
   },
@@ -24,7 +30,7 @@ export const teamMembers: TeamMember[] = [
     name: "Ana Ferreira",
     position: "Diretora de Operações",
     bio: "Engenheira agrônoma responsável pela gestão da produção e processos de beneficiamento.",
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80",
+    imageUrl: arrozCascaImage,
     email: "ana.ferreira@tfalimentos.com.br",
     linkedin: "https://linkedin.com/in/anaferreira"
   },
@@ -33,7 +39,7 @@ export const teamMembers: TeamMember[] = [
     name: "Roberto Mendes",
     position: "Diretor Comercial",
     bio: "Especialista em comércio exterior, coordena estratégias de vendas e relações com clientes.",
-    imageUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80",
+    imageUrl: arrozImage,
     email: "roberto.mendes@tfalimentos.com.br",
     linkedin: "https://linkedin.com/in/robertomendes",
     twitter: "https://twitter.com/robertomendes"
@@ -43,7 +49,7 @@ export const teamMembers: TeamMember[] = [
     name: "Juliana Costa",
     position: "Gerente de Qualidade",
     bio: "Lidera o laboratório de pesquisa e análise, garantindo os altos padrões dos produtos.",
-    imageUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&h=400&q=80",
+    imageUrl: cultivoArrozImage,
     email: "juliana.costa@tfalimentos.com.br",
     linkedin: "https://linkedin.com/in/julianacosta"
   }

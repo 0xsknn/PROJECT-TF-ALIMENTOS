@@ -1,4 +1,5 @@
 import { Medal, Users, Globe } from "lucide-react";
+import cultivoArrozImage from "@assets/culitvoarroz.jpg";
 
 const AboutHero = () => {
   return (
@@ -53,7 +54,7 @@ const AboutHero = () => {
           
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1598963938025-98c46f9a9899?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=500&q=80"
+              src={cultivoArrozImage}
               alt="Plantação de arroz" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
