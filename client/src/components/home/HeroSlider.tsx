@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import blackFarmerImage from "../../assets/Pedro-Stropasolas-Brasil-de-Fato.jpeg";
 
 // Define um tipo para os slides
 interface SlideItem {
@@ -16,7 +15,7 @@ interface SlideItem {
 const bannerSlides: SlideItem[] = [
   {
     id: 1,
-    imageUrl: blackFarmerImage,
+    imageUrl: "/images/milhooo.jpg",
     title: "Qualidade em Grãos para sua Indústria",
     description: "Selecionamos os melhores grãos para garantir o padrão que sua produção exige",
     buttonText: "Conheça Nossos Produtos",
