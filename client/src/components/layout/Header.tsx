@@ -59,6 +59,9 @@ const Header = () => {
                 <DropdownMenuItem>
                   <Link href="/produtos/soja-grao" className="w-full">Soja Grão</Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/produtos/milho" className="w-full">Milho</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             
@@ -101,6 +104,9 @@ const Header = () => {
                   </Link>
                   <Link href="/produtos/soja-grao" className="block py-2 hover:text-primary">
                     Soja Grão
+                  </Link>
+                  <Link href="/produtos/milho" className="block py-2 hover:text-primary">
+                    Milho
                   </Link>
                 </div>
               )}

@@ -99,6 +99,11 @@ const Footer = () => {
                   <ChevronRight className="h-4 w-4 mr-2" /> Soja Grão
                 </Link>
               </li>
+              <li>
+                <Link href="/produtos/milho" className="text-gray-400 hover:text-white transition flex items-center">
+                  <ChevronRight className="h-4 w-4 mr-2" /> Milho
+                </Link>
+              </li>
 
               <li>
                 <Link href="/qualidade/certificacoes" className="text-gray-400 hover:text-white transition flex items-center">
