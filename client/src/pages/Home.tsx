@@ -27,15 +27,12 @@ const SimpleBanner = () => {
             <p className="text-lg mb-6">
               Selecionamos os melhores grãos para garantir o padrão que sua produção exige
             </p>
-            <Button 
-              className="bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md h-auto"
-              onClick={() => {
-                console.log("Navegando para produtos");
-                navigate("/produtos");
-              }}
+            <a 
+              href="/produtos" 
+              className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md"
             >
               Conheça Nossos Produtos
-            </Button>
+            </a>
           </div>
         </div>
       </div>
