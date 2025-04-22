@@ -2,13 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-main: #ffffff;
+  --text-main: #333333;
+  --header-bg: #ffffff;
+  --footer-bg: #f3f4f6;
+  --card-bg: #ffffff;
+  --border-color: #e5e7eb;
+}
+
+.dark {
+  --bg-main: #1a1a1a;
+  --text-main: #e1e1e1;
+  --header-bg: #111111;
+  --footer-bg: #111111;
+  --card-bg: #222222;
+  --border-color: #333333;
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   /* Ajuste de texto responsivo para dispositivos móveis */

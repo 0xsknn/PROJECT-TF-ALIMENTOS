@@ -12,6 +12,7 @@ import About from "@/pages/About";
 import QualityCenter from "@/pages/QualityCenter";
 import Contact from "@/pages/Contact";
 import RedirectToProducts from "@/pages/RedirectToProducts";
+import { ThemeProvider } from "./hooks/use-theme";
 
 function Router() {
   return (
@@ -33,14 +34,16 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow pt-12 md:pt-16">
-          <Router />
-        </main>
-        <Footer />
-      </div>
-      <Toaster />
+      <ThemeProvider>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow pt-12 md:pt-16">
+            <Router />
+          </main>
+          <Footer />
+        </div>
+        <Toaster />
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }
