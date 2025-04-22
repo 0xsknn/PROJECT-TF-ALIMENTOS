@@ -28,10 +28,10 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                 <span className={`${product.isAvailable ? 'bg-yellow-500' : 'bg-red-500'} text-white text-xs px-2 py-1 rounded-full mr-2`}>
                   {product.isAvailable ? 'Disponível' : 'Limitado'}
                 </span>
-                <span className="text-gray-600 text-xs md:text-sm">Código: {product.id}</span>
+                <span className="text-gray-600 dark:text-gray-300 text-xs md:text-sm">Código: {product.id}</span>
               </div>
               <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl mb-2">{product.name}</h1>
-              <p className="text-gray-600 mb-4 text-sm md:text-base mobile-text-fix">{product.description}</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm md:text-base mobile-text-fix">{product.description}</p>
               
               <div className="flex flex-wrap gap-3 md:gap-4 mb-5 md:mb-6 text-xs md:text-sm">
                 <div className="flex items-center">
@@ -44,34 +44,34 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                 </div>
               </div>
               
-              <div className="bg-gray-100 rounded-lg p-3 md:p-6 mb-5 md:mb-6">
-                <h3 className="font-heading font-semibold text-base md:text-lg mb-3 md:mb-4">Especificações Técnicas</h3>
+              <div className="bg-gray-100 dark:bg-gray-800 transition-colors duration-300 dark:bg-gray-800 rounded-lg p-3 md:p-6 mb-5 md:mb-6 transition-colors duration-300">
+                <h3 className="font-heading font-semibold dark:text-white text-base md:text-lg mb-3 md:mb-4 dark:text-white">Especificações Técnicas</h3>
                 <div className="overflow-x-auto">
                   <table className="w-full text-xs md:text-sm">
                     <tbody>
-                      <tr className="border-b border-gray-300">
-                        <td className="py-1.5 md:py-2 font-semibold">Classificação</td>
-                        <td className="py-1.5 md:py-2">{product.category === 'soja' ? 'Soja Grão, Não Transgênica' : product.category === 'milho' ? 'Milho Amarelo, Tipo 1' : 'Tipo 1, Longo Fino'}</td>
+                      <tr className="border-b border-gray-300 dark:border-gray-700 dark:border-gray-700">
+                        <td className="py-1.5 md:py-2 font-semibold dark:text-white">Classificação</td>
+                        <td className="py-1.5 md:py-2 dark:text-gray-300">{product.category === 'soja' ? 'Soja Grão, Não Transgênica' : product.category === 'milho' ? 'Milho Amarelo, Tipo 1' : 'Tipo 1, Longo Fino'}</td>
                       </tr>
-                      <tr className="border-b border-gray-300">
-                        <td className="py-1.5 md:py-2 font-semibold">Umidade</td>
-                        <td className="py-1.5 md:py-2">{product.moisture || "N/A"}</td>
+                      <tr className="border-b border-gray-300 dark:border-gray-700 dark:border-gray-700">
+                        <td className="py-1.5 md:py-2 font-semibold dark:text-white">Umidade</td>
+                        <td className="py-1.5 md:py-2 dark:text-gray-300">{product.moisture || "N/A"}</td>
                       </tr>
-                      <tr className="border-b border-gray-300">
-                        <td className="py-1.5 md:py-2 font-semibold">Impureza</td>
-                        <td className="py-1.5 md:py-2">{product.impurity || "N/A"}</td>
+                      <tr className="border-b border-gray-300 dark:border-gray-700 dark:border-gray-700">
+                        <td className="py-1.5 md:py-2 font-semibold dark:text-white">Impureza</td>
+                        <td className="py-1.5 md:py-2 dark:text-gray-300">{product.impurity || "N/A"}</td>
                       </tr>
-                      <tr className="border-b border-gray-300">
-                        <td className="py-1.5 md:py-2 font-semibold">Rendimento</td>
-                        <td className="py-1.5 md:py-2">95%</td>
+                      <tr className="border-b border-gray-300 dark:border-gray-700 dark:border-gray-700">
+                        <td className="py-1.5 md:py-2 font-semibold dark:text-white">Rendimento</td>
+                        <td className="py-1.5 md:py-2 dark:text-gray-300">95%</td>
                       </tr>
-                      <tr className="border-b border-gray-300">
-                        <td className="py-1.5 md:py-2 font-semibold">Grãos quebrados</td>
-                        <td className="py-1.5 md:py-2">&lt; 2%</td>
+                      <tr className="border-b border-gray-300 dark:border-gray-700 dark:border-gray-700">
+                        <td className="py-1.5 md:py-2 font-semibold dark:text-white">Grãos quebrados</td>
+                        <td className="py-1.5 md:py-2 dark:text-gray-300">&lt; 2%</td>
                       </tr>
                       <tr>
-                        <td className="py-1.5 md:py-2 font-semibold">PH</td>
-                        <td className="py-1.5 md:py-2">{product.ph || "N/A"}</td>
+                        <td className="py-1.5 md:py-2 font-semibold dark:text-white">PH</td>
+                        <td className="py-1.5 md:py-2 dark:text-gray-300">{product.ph || "N/A"}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -80,13 +80,13 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
               
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <Link href="/contato">
-                  <Button className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-heading font-semibold text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 h-auto">
+                  <Button className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-heading font-semibold dark:text-white text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 h-auto">
                     Solicitar Cotação
                   </Button>
                 </Link>
                 <Button 
                   variant="outline" 
-                  className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white font-heading font-semibold text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 h-auto"
+                  className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white font-heading font-semibold dark:text-white text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 h-auto"
                 >
                   <Download className="mr-1 md:mr-2 h-3 w-3 md:h-4 md:w-4" /> Baixar Laudo Técnico
                 </Button>
@@ -98,22 +98,22 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
         {/* Product Description Tabs */}
         <div className="mt-8 md:mt-12">
           <Tabs defaultValue="description" onValueChange={setSelectedTab}>
-            <TabsList className="border-b border-gray-300 w-full justify-start overflow-x-auto flex-nowrap bg-transparent gap-0 md:gap-2 h-auto p-0">
+            <TabsList className="border-b border-gray-300 dark:border-gray-700 w-full justify-start overflow-x-auto flex-nowrap bg-transparent gap-0 md:gap-2 h-auto p-0">
               <TabsTrigger 
                 value="description" 
-                className={`${selectedTab === 'description' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-2 py-2 mr-1 md:px-4 md:mr-4 text-xs md:text-sm lg:text-base h-auto data-[state=active]:bg-transparent`}
+                className={`${selectedTab === 'description' ? 'text-primary border-b-2 border-primary' : 'text-gray-600 dark:text-gray-300'} font-heading font-semibold dark:text-white px-2 py-2 mr-1 md:px-4 md:mr-4 text-xs md:text-sm lg:text-base h-auto data-[state=active]:bg-transparent`}
               >
                 Descrição
               </TabsTrigger>
               <TabsTrigger 
                 value="certifications" 
-                className={`${selectedTab === 'certifications' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-2 py-2 mr-1 md:px-4 md:mr-4 text-xs md:text-sm lg:text-base whitespace-nowrap h-auto data-[state=active]:bg-transparent`}
+                className={`${selectedTab === 'certifications' ? 'text-primary border-b-2 border-primary' : 'text-gray-600 dark:text-gray-300'} font-heading font-semibold dark:text-white px-2 py-2 mr-1 md:px-4 md:mr-4 text-xs md:text-sm lg:text-base whitespace-nowrap h-auto data-[state=active]:bg-transparent`}
               >
                 Certificações
               </TabsTrigger>
               <TabsTrigger 
                 value="applications" 
-                className={`${selectedTab === 'applications' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-2 py-2 text-xs md:text-sm lg:text-base md:px-4 h-auto data-[state=active]:bg-transparent`}
+                className={`${selectedTab === 'applications' ? 'text-primary border-b-2 border-primary' : 'text-gray-600 dark:text-gray-300'} font-heading font-semibold dark:text-white px-2 py-2 text-xs md:text-sm lg:text-base md:px-4 h-auto data-[state=active]:bg-transparent`}
               >
                 Aplicações
               </TabsTrigger>
@@ -123,7 +123,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
               <TabsContent value="description">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
                   <div className="lg:col-span-2 mobile-text-fix">
-                    <h3 className="font-heading font-semibold text-lg md:text-xl mb-3 md:mb-4">Sobre o Produto</h3>
+                    <h3 className="font-heading font-semibold dark:text-white text-lg md:text-xl mb-3 md:mb-4">Sobre o Produto</h3>
                     {product.category === 'soja' ? (
                       <>
                         <p className="mb-4">
@@ -177,7 +177,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                   </div>
                   
                   <div>
-                    <h3 className="font-heading font-semibold text-base md:text-lg lg:text-xl mb-2 md:mb-3 lg:mb-4">Destaques</h3>
+                    <h3 className="font-heading font-semibold dark:text-white text-base md:text-lg lg:text-xl mb-2 md:mb-3 lg:mb-4">Destaques</h3>
                     <ul className="space-y-2 md:space-y-3">
                       {product.category === 'soja' ? (
                         <>
@@ -256,7 +256,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
               
               <TabsContent value="certifications">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                  <div className="bg-gray-100 rounded-lg p-4 md:p-6">
+                  <div className="bg-gray-100 dark:bg-gray-800 transition-colors duration-300 rounded-lg p-4 md:p-6">
                     <div className="flex items-start">
                       <div className="flex-shrink-0 mr-3 md:mr-4 h-16 w-16 md:h-20 md:w-20 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 md:w-16 md:h-16 text-primary">
@@ -266,8 +266,8 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-heading font-semibold text-base md:text-lg mb-1 md:mb-2">ISO 22000</h4>
-                        <p className="text-gray-600 text-sm md:text-base mobile-text-fix">
+                        <h4 className="font-heading font-semibold dark:text-white text-base md:text-lg mb-1 md:mb-2">ISO 22000</h4>
+                        <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base mobile-text-fix">
                           Certificação internacional que garante que nosso sistema de gestão de segurança de alimentos 
                           atende aos padrões globais, assegurando produtos seguros para consumo.
                         </p>
@@ -275,7 +275,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </div>
                   </div>
                   
-                  <div className="bg-gray-100 rounded-lg p-6">
+                  <div className="bg-gray-100 dark:bg-gray-800 transition-colors duration-300 rounded-lg p-6">
                     <div className="flex items-start">
                       <div className="flex-shrink-0 mr-4 h-20 w-20 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-16 h-16 text-primary">
@@ -284,8 +284,8 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-heading font-semibold text-lg mb-2">HACCP</h4>
-                        <p className="text-gray-600">
+                        <h4 className="font-heading font-semibold dark:text-white text-lg mb-2">HACCP</h4>
+                        <p className="text-gray-600 dark:text-gray-300">
                           Sistema de Análise de Perigos e Pontos Críticos de Controle, garantindo que todos os riscos biológicos, 
                           químicos e físicos sejam preventivamente controlados no processo produtivo.
                         </p>
@@ -293,7 +293,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </div>
                   </div>
                   
-                  <div className="bg-gray-100 rounded-lg p-6">
+                  <div className="bg-gray-100 dark:bg-gray-800 transition-colors duration-300 rounded-lg p-6">
                     <div className="flex items-start">
                       <div className="flex-shrink-0 mr-4 h-20 w-20 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-16 h-16 text-primary">
@@ -304,8 +304,8 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-heading font-semibold text-lg mb-2">Boas Práticas Agrícolas</h4>
-                        <p className="text-gray-600">
+                        <h4 className="font-heading font-semibold dark:text-white text-lg mb-2">Boas Práticas Agrícolas</h4>
+                        <p className="text-gray-600 dark:text-gray-300">
                           Certificação que atesta a utilização de práticas sustentáveis de produção, com respeito ao meio ambiente 
                           e às comunidades locais.
                         </p>
@@ -313,7 +313,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </div>
                   </div>
                   
-                  <div className="bg-gray-100 rounded-lg p-6">
+                  <div className="bg-gray-100 dark:bg-gray-800 transition-colors duration-300 rounded-lg p-6">
                     <div className="flex items-start">
                       <div className="flex-shrink-0 mr-4 h-20 w-20 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-16 h-16 text-primary">
@@ -324,8 +324,8 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-heading font-semibold text-lg mb-2">Produto Brasileiro</h4>
-                        <p className="text-gray-600">
+                        <h4 className="font-heading font-semibold dark:text-white text-lg mb-2">Produto Brasileiro</h4>
+                        <p className="text-gray-600 dark:text-gray-300">
                           Selo que identifica e valoriza produtos genuinamente brasileiros, produzidos com insumos nacionais e 
                           gerando empregos no país.
                         </p>
@@ -336,7 +336,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
               </TabsContent>
               
               <TabsContent value="applications">
-                <h3 className="font-heading font-semibold text-lg md:text-xl mb-3 md:mb-4">Aplicações e Usos</h3>
+                <h3 className="font-heading font-semibold dark:text-white text-lg md:text-xl mb-3 md:mb-4">Aplicações e Usos</h3>
                 <p className="mb-4 md:mb-6 text-sm md:text-base mobile-text-fix">
                   {product.category === 'soja' ? 
                     'A soja em grão é versátil e pode ser utilizada em diversas aplicações na indústria alimentícia e outros setores:' : 
@@ -346,7 +346,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-                  <div className="bg-gray-100 rounded-lg p-6">
+                  <div className="bg-gray-100 dark:bg-gray-800 transition-colors duration-300 rounded-lg p-6">
                     <div className="text-primary text-3xl mb-3">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-primary">
                         <path d="M15 11h.01M11 15h.01M16 16h.01M10 11h.01M17 11h.01M11 11h.01M11 13h.01M13 15h.01M13 13h.01M15 15h.01M17 15h.01M17 13h.01M3 7V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2" />
@@ -354,7 +354,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                         <path d="M6 7v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7" />
                       </svg>
                     </div>
-                    <h4 className="font-heading font-semibold text-lg mb-2">Indústria Alimentícia</h4>
+                    <h4 className="font-heading font-semibold dark:text-white text-lg mb-2">Indústria Alimentícia</h4>
                     <ul className="space-y-2">
                       {product.category === 'soja' ? (
                         <>
@@ -381,7 +381,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </ul>
                   </div>
                   
-                  <div className="bg-gray-100 rounded-lg p-6">
+                  <div className="bg-gray-100 dark:bg-gray-800 transition-colors duration-300 rounded-lg p-6">
                     <div className="text-primary text-3xl mb-3">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-primary">
                         <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
@@ -391,7 +391,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                         <path d="M16 13v2" />
                       </svg>
                     </div>
-                    <h4 className="font-heading font-semibold text-lg mb-2">Varejo e Distribuição</h4>
+                    <h4 className="font-heading font-semibold dark:text-white text-lg mb-2">Varejo e Distribuição</h4>
                     <ul className="space-y-2">
                       <li>• Venda para indústrias de beneficiamento</li>
                       <li>• Fornecimento a distribuidores</li>
@@ -400,7 +400,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     </ul>
                   </div>
                   
-                  <div className="bg-gray-100 rounded-lg p-6">
+                  <div className="bg-gray-100 dark:bg-gray-800 transition-colors duration-300 rounded-lg p-6">
                     <div className="text-primary text-3xl mb-3">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-primary">
                         <path d="M2 20h20" />
@@ -410,7 +410,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                         <path d="M12 12v5" />
                       </svg>
                     </div>
-                    <h4 className="font-heading font-semibold text-lg mb-2">Outros Usos</h4>
+                    <h4 className="font-heading font-semibold dark:text-white text-lg mb-2">Outros Usos</h4>
                     <ul className="space-y-2">
                       {product.category === 'soja' ? (
                         <>
@@ -462,10 +462,10 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                   </div>
                   <div className="p-4">
                     <h3 className="font-heading font-bold text-lg mb-1">{relatedProduct.name}</h3>
-                    <p className="text-gray-600 text-sm mb-3">{relatedProduct.shortDescription}</p>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">{relatedProduct.shortDescription}</p>
                     <Link href={`/produtos/${relatedProduct.slug}`}>
                       <Button 
-                        className="w-full bg-primary hover:bg-primary/90 text-white font-heading font-semibold text-sm"
+                        className="w-full bg-primary hover:bg-primary/90 text-white font-heading font-semibold dark:text-white text-sm"
                       >
                         Ver Detalhes
                       </Button>
