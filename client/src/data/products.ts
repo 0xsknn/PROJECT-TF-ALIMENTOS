@@ -8,7 +8,7 @@ export const mockProducts: Product[] = [
     description: "Soja não transgênica, cultivada com práticas sustentáveis. Ideal para processamento industrial. Grãos uniformes de alto valor nutricional, produzidos com técnicas avançadas de cultivo e colheita.",
     shortDescription: "Soja não transgênica, cultivada com práticas sustentáveis. Ideal para processamento industrial.",
     category: "soja",
-    imageUrl: "/images/sojaaa1.png",
+    imageUrl: "/images/sojacard.webp",
     isAvailable: true,
     isHighlighted: true,
     moisture: "14%",
