@@ -15,18 +15,18 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 dark:bg-gray-950 text-white transition-colors duration-300">
       <div className="container mx-auto px-4 pt-10 md:pt-16 pb-6 md:pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 md:mb-12">
           {/* Company Information */}
           <div>
             <div className="flex items-center mb-4 md:mb-6">
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center mr-2">
+              <div className="w-8 h-8 md:w-10 md:h-10 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center mr-2 transition-colors duration-300">
                 <div className="w-6 h-6 md:w-8 md:h-8 bg-primary rounded-full flex items-center justify-center text-white font-heading font-bold text-xs md:text-sm">TF</div>
               </div>
               <span className="text-lg md:text-xl font-heading font-bold">TF Alimentos</span>
             </div>
-            <p className="mb-4 text-gray-400 text-xs md:text-sm mobile-text-fix">
+            <p className="mb-4 text-gray-400 dark:text-gray-300 text-xs md:text-sm mobile-text-fix">
               Qualidade em grãos há mais de 5 anos, fornecendo os melhores produtos para indústria e distribuição.
             </p>
             <div className="flex mb-3 md:mb-4">
@@ -54,27 +54,27 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Início
                 </Link>
               </li>
               <li>
-                <Link href="/sobre" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/sobre" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Sobre Nós
                 </Link>
               </li>
               <li>
-                <Link href="/produtos" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/produtos" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Produtos
                 </Link>
               </li>
               <li>
-                <Link href="/qualidade" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/qualidade" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Centro de Qualidade
                 </Link>
               </li>
               <li>
-                <Link href="/contato" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/contato" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Contato
                 </Link>
               </li>
@@ -89,22 +89,22 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/produtos/arroz-com-casca" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/produtos/arroz-com-casca" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Arroz com Casca
                 </Link>
               </li>
               <li>
-                <Link href="/produtos/soja-grao" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/produtos/soja-grao" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Soja Grão
                 </Link>
               </li>
               <li>
-                <Link href="/produtos/milho" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/produtos/milho" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Milho
                 </Link>
               </li>
               <li>
-                <Link href="/qualidade" className="text-gray-400 hover:text-white transition flex items-center text-xs md:text-sm">
+                <Link href="/qualidade" className="text-gray-400 dark:text-gray-300 hover:text-white transition flex items-center text-xs md:text-sm">
                   <ChevronRight className="h-3 w-3 md:h-4 md:w-4 mr-1 md:mr-2" /> Certificações
                 </Link>
               </li>
@@ -117,7 +117,7 @@ const Footer = () => {
               after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-1 after:w-8 md:after:w-10 after:bg-yellow-500">
               Newsletter
             </h3>
-            <p className="text-gray-400 mb-4 text-xs md:text-sm mobile-text-fix">
+            <p className="text-gray-400 dark:text-gray-300 mb-4 text-xs md:text-sm mobile-text-fix">
               Receba novidades sobre produtos, tendências de mercado e conteúdos exclusivos.
             </p>
             <form className="mb-4">
@@ -125,7 +125,7 @@ const Footer = () => {
                 <Input 
                   type="email" 
                   placeholder="Seu e-mail" 
-                  className="rounded-r-none bg-white text-xs md:text-sm h-8 md:h-10" 
+                  className="rounded-r-none bg-white dark:bg-gray-800 dark:text-gray-200 text-xs md:text-sm h-8 md:h-10" 
                 />
                 <Button 
                   type="submit" 
@@ -135,34 +135,34 @@ const Footer = () => {
                 </Button>
               </div>
             </form>
-            <p className="text-xs text-gray-400 mb-3">Siga-nos</p>
+            <p className="text-xs text-gray-400 dark:text-gray-300 mb-3">Siga-nos</p>
             <div className="flex space-x-3 md:space-x-4">
-              <a href="#" className="bg-gray-800 hover:bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition">
+              <a href="#" className="bg-gray-800 dark:bg-gray-700 hover:bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition">
                 <Facebook className="h-4 w-4 md:h-5 md:w-5" />
               </a>
-              <a href="https://www.instagram.com/tfalimentos/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 hover:bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition">
+              <a href="https://www.instagram.com/tfalimentos/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 dark:bg-gray-700 hover:bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition">
                 <Instagram className="h-4 w-4 md:h-5 md:w-5" />
               </a>
-              <a href="#" className="bg-gray-800 hover:bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition">
+              <a href="#" className="bg-gray-800 dark:bg-gray-700 hover:bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition">
                 <Linkedin className="h-4 w-4 md:h-5 md:w-5" />
               </a>
-              <a href="#" className="bg-gray-800 hover:bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition">
+              <a href="#" className="bg-gray-800 dark:bg-gray-700 hover:bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition">
                 <Youtube className="h-4 w-4 md:h-5 md:w-5" />
               </a>
             </div>
           </div>
         </div>
         
-        <div className="border-t border-gray-800 pt-6 md:pt-8">
+        <div className="border-t border-gray-800 dark:border-gray-700 pt-6 md:pt-8 transition-colors duration-300">
           <div className="flex flex-col md:flex-row md:justify-between items-center">
-            <p className="text-gray-400 text-xs md:text-sm mb-3 md:mb-0">
+            <p className="text-gray-400 dark:text-gray-300 text-xs md:text-sm mb-3 md:mb-0">
               © {new Date().getFullYear()} TF Alimentos. Todos os direitos reservados.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white text-xs md:text-sm transition">
+              <a href="#" className="text-gray-400 dark:text-gray-300 hover:text-white text-xs md:text-sm transition">
                 Política de Privacidade
               </a>
-              <a href="#" className="text-gray-400 hover:text-white text-xs md:text-sm transition">
+              <a href="#" className="text-gray-400 dark:text-gray-300 hover:text-white text-xs md:text-sm transition">
                 Termos de Uso
               </a>
             </div>
