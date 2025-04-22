@@ -13,6 +13,8 @@ import iso22000Image from "@assets/iso22000.png";
 import organicImage from "@assets/org1.webp";
 import bpaImage from "@assets/BPA3141.jpg";
 import haccpImage from "@assets/haccp.png";
+import rfaImage from "@assets/RainForest.png";
+import miImage from "@assets/maisintegridade.webp";
 
 const QualityCenter = () => {
   const [activeTab, setActiveTab] = useState("certifications");
@@ -113,6 +115,42 @@ const QualityCenter = () => {
                       <h3 className="font-heading font-semibold text-xl mb-2 dark:text-white">Análise de Perigos e Pontos Críticos de Controle</h3>
                       <p className="text-gray-600 dark:text-gray-300 mb-4">Sistema preventivo que identifica, avalia e controla perigos significativos para a segurança dos alimentos.</p>
                       <p className="text-sm text-gray-500 dark:text-gray-400">Última renovação: 05/02/2023</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* Rain Forest Alliance */}
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="bg-primary/5 dark:bg-primary/10 p-6 flex items-center justify-center md:w-1/3">
+                      <div className="h-24 w-24 flex items-center justify-center">
+                        <img src={rfaImage} alt="Rain Forest Alliance" className="max-h-full max-w-full object-contain" />
+                      </div>
+                    </div>
+                    <div className="p-6 md:w-2/3">
+                      <h3 className="font-heading font-semibold text-xl mb-2 dark:text-white">Rain Forest Alliance</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">Certificação que atesta o compromisso com a conservação da biodiversidade e meios de vida sustentáveis.</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Última renovação: 30/05/2023</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* Selo Mais Integridade */}
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="bg-primary/5 dark:bg-primary/10 p-6 flex items-center justify-center md:w-1/3">
+                      <div className="h-24 w-24 flex items-center justify-center">
+                        <img src={miImage} alt="Selo Mais Integridade" className="max-h-full max-w-full object-contain" />
+                      </div>
+                    </div>
+                    <div className="p-6 md:w-2/3">
+                      <h3 className="font-heading font-semibold text-xl mb-2 dark:text-white">Selo Mais Integridade</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">Reconhecimento do Ministério da Agricultura para empresas que adotam práticas de integridade, responsabilidade social e sustentabilidade.</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Última renovação: 12/01/2023</p>
                     </div>
                   </div>
                 </CardContent>
