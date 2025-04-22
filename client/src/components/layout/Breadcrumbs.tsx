@@ -12,7 +12,7 @@ interface BreadcrumbsProps {
 
 const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
   return (
-    <div className="bg-gray-100 py-2 md:py-3">
+    <div className="bg-gray-100 dark:bg-gray-800 py-2 md:py-3 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center text-xs md:text-sm overflow-x-auto whitespace-nowrap">
           {items.map((item, index) => {
@@ -22,17 +22,17 @@ const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
             // If it's the last item, render as text, otherwise as a link
             if (isLast) {
               return (
-                <span key={index} className="text-gray-900 font-semibold flex items-center">
-                  {index > 0 && <ChevronRight className="mx-1 md:mx-2 h-3 w-3 md:h-4 md:w-4 text-gray-500 flex-shrink-0" />}
+                <span key={index} className="text-gray-900 dark:text-white font-semibold flex items-center">
+                  {index > 0 && <ChevronRight className="mx-1 md:mx-2 h-3 w-3 md:h-4 md:w-4 text-gray-500 dark:text-gray-400 flex-shrink-0" />}
                   <span className="truncate">{item.label}</span>
                 </span>
               );
             }
             
             return (
-              <div key={index} className="flex items-center text-gray-600">
-                {index > 0 && <ChevronRight className="mx-1 md:mx-2 h-3 w-3 md:h-4 md:w-4 text-gray-500 flex-shrink-0" />}
-                <Link href={item.href || "#"} className="hover:text-primary truncate">
+              <div key={index} className="flex items-center text-gray-600 dark:text-gray-300">
+                {index > 0 && <ChevronRight className="mx-1 md:mx-2 h-3 w-3 md:h-4 md:w-4 text-gray-500 dark:text-gray-400 flex-shrink-0" />}
+                <Link href={item.href || "#"} className="hover:text-primary dark:hover:text-primary truncate">
                   {item.label}
                 </Link>
               </div>
