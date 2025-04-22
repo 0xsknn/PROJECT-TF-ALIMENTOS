@@ -8,6 +8,12 @@ import { certifications } from "@/data/certifications";
 import ContactCTA from "@/components/home/ContactCTA";
 import labImage from "@assets/arrozcasca.jpg";
 
+// Importar imagens de certificações
+import iso22000Image from "@assets/iso22000.png";
+import organicImage from "@assets/org1.webp";
+import bpaImage from "@assets/BPA3141.jpg";
+import haccpImage from "@assets/haccp.png";
+
 const QualityCenter = () => {
   const [activeTab, setActiveTab] = useState("certifications");
 
@@ -40,24 +46,77 @@ const QualityCenter = () => {
 
           <TabsContent value="certifications">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              {certifications.map((cert) => (
-                <Card key={cert.id} className="overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="flex flex-col md:flex-row">
-                      <div className="bg-primary/5 p-6 flex items-center justify-center md:w-1/3">
-                        <div className="h-24 w-24 flex items-center justify-center">
-                          {cert.icon}
-                        </div>
-                      </div>
-                      <div className="p-6 md:w-2/3">
-                        <h3 className="font-heading font-semibold text-xl mb-2">{cert.name}</h3>
-                        <p className="text-gray-600 mb-4">{cert.description}</p>
-                        <p className="text-sm text-gray-500">Última renovação: {cert.renewalDate}</p>
+              {/* ISO 22000 */}
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="bg-primary/5 dark:bg-primary/10 p-6 flex items-center justify-center md:w-1/3">
+                      <div className="h-24 w-24 flex items-center justify-center">
+                        <img src={iso22000Image} alt="ISO 22000" className="max-h-full max-w-full object-contain" />
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    <div className="p-6 md:w-2/3">
+                      <h3 className="font-heading font-semibold text-xl mb-2 dark:text-white">Certificação ISO 22000</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">Sistema de gestão de segurança alimentar que garante o controle de riscos em toda a cadeia produtiva.</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Última renovação: 23/03/2023</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* Selo Orgânico */}
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="bg-primary/5 dark:bg-primary/10 p-6 flex items-center justify-center md:w-1/3">
+                      <div className="h-24 w-24 flex items-center justify-center">
+                        <img src={organicImage} alt="Selo Orgânico" className="max-h-full max-w-full object-contain" />
+                      </div>
+                    </div>
+                    <div className="p-6 md:w-2/3">
+                      <h3 className="font-heading font-semibold text-xl mb-2 dark:text-white">Certificação Orgânica</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">Para produtos cultivados sem o uso de agrotóxicos, fertilizantes químicos ou organismos geneticamente modificados.</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Última renovação: 15/06/2023</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* BPA */}
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="bg-primary/5 dark:bg-primary/10 p-6 flex items-center justify-center md:w-1/3">
+                      <div className="h-24 w-24 flex items-center justify-center">
+                        <img src={bpaImage} alt="BPA" className="max-h-full max-w-full object-contain" />
+                      </div>
+                    </div>
+                    <div className="p-6 md:w-2/3">
+                      <h3 className="font-heading font-semibold text-xl mb-2 dark:text-white">Boas Práticas Agrícolas (BPA)</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">Conjunto de princípios aplicados à produção e ao processamento de alimentos visando a saúde humana e a proteção ao meio ambiente.</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Última renovação: 10/04/2023</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              {/* HACCP */}
+              <Card className="overflow-hidden">
+                <CardContent className="p-0">
+                  <div className="flex flex-col md:flex-row">
+                    <div className="bg-primary/5 dark:bg-primary/10 p-6 flex items-center justify-center md:w-1/3">
+                      <div className="h-24 w-24 flex items-center justify-center">
+                        <img src={haccpImage} alt="HACCP" className="max-h-full max-w-full object-contain" />
+                      </div>
+                    </div>
+                    <div className="p-6 md:w-2/3">
+                      <h3 className="font-heading font-semibold text-xl mb-2 dark:text-white">Análise de Perigos e Pontos Críticos de Controle</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">Sistema preventivo que identifica, avalia e controla perigos significativos para a segurança dos alimentos.</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400">Última renovação: 05/02/2023</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
 
             <div className="bg-gray-100 rounded-lg p-8 mb-8">
