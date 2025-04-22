@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { apiRequest } from "@/lib/queryClient";
 import { Product } from "@shared/schema";
+import sojaImage from "@assets/shieahieax.png";
 
 const CurrentHarvest = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -84,7 +85,7 @@ const CurrentHarvest = () => {
             >
               <div className="h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
-                  src={product.imageUrl} 
+                  src={product.name === "Soja Grão" ? sojaImage : product.imageUrl} 
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
