@@ -10,7 +10,7 @@ import type { Product } from "@shared/schema";
 // Import product images
 import arrozComCascaImg from "@assets/arroz3333.jpg";
 import sojaGraoImg from "@assets/inteirosoja.png";
-import milhoImg from "@assets/milho11.png";
+import milhoImg from "@assets/inteiro.webp";
 
 // Mapeamento de imagens para cada produto
 const productImages: Record<string, string> = {
