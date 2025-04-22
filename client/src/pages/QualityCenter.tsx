@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Download, CheckCircle } from "lucide-react";
 import { certifications } from "@/data/certifications";
 import ContactCTA from "@/components/home/ContactCTA";
-import labImage from "@assets/arrozcasca.jpg";
+import labImage from "@assets/Tecnico-agricola_.jpg";
 
 // Importar imagens de certificações
 import iso22000Image from "@assets/iso22000.png";
@@ -186,19 +186,19 @@ const QualityCenter = () => {
               <div>
                 <img 
                   src={labImage} 
-                  alt="Laboratório de Qualidade" 
+                  alt="Técnico Agrícola Monitorando Plantação" 
                   className="w-full h-auto rounded-lg shadow-lg mb-6"
                 />
                 <h3 className="font-heading font-semibold text-2xl mb-4">
-                  Laboratório de Análises
+                  Controle de Qualidade em Campo
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Nosso laboratório próprio realiza análises físico-químicas completas em todas as etapas 
-                  do processo produtivo, garantindo a rastreabilidade e a qualidade dos nossos produtos.
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Nossa equipe técnica realiza monitoramento constante diretamente no campo, 
+                  utilizando tecnologia de ponta para garantir a qualidade dos grãos desde a origem.
                 </p>
-                <p className="text-gray-600">
-                  Equipado com tecnologia de ponta, nosso laboratório possibilita o monitoramento contínuo 
-                  dos parâmetros de qualidade estabelecidos pelas normas nacionais e internacionais.
+                <p className="text-gray-600 dark:text-gray-300">
+                  O acompanhamento digital permite análises em tempo real das condições de cultivo, 
+                  colheita e armazenamento, assegurando a rastreabilidade completa de nossos produtos.
                 </p>
               </div>
 
