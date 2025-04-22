@@ -229,12 +229,12 @@ const QualityCenter = () => {
                       description: "Identificação e quantificação de micro-organismos, garantindo a segurança do produto final."
                     }
                   ].map((analysis, index) => (
-                    <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
+                    <div key={index} className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
                       <div className="flex items-start">
                         <CheckCircle className="text-primary h-5 w-5 mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-heading font-semibold text-lg mb-1">{analysis.title}</h4>
-                          <p className="text-gray-600 text-sm">{analysis.description}</p>
+                          <h4 className="font-heading font-semibold text-lg mb-1 dark:text-white">{analysis.title}</h4>
+                          <p className="text-gray-600 dark:text-gray-300 text-sm">{analysis.description}</p>
                         </div>
                       </div>
                     </div>
@@ -246,7 +246,7 @@ const QualityCenter = () => {
 
           <TabsContent value="reports">
             <div className="mb-8">
-              <p className="text-gray-600 mb-6 text-center max-w-3xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 text-center max-w-3xl mx-auto">
                 Disponibilizamos laudos técnicos detalhados para todos os nossos produtos. Esses documentos 
                 atestam a conformidade dos nossos grãos com os padrões de qualidade estabelecidos.
               </p>
@@ -298,7 +298,7 @@ const QualityCenter = () => {
                 <CardTitle className="text-xl font-heading">Solicitar Laudo Específico</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Não encontrou o laudo que precisa? Entre em contato conosco informando o produto e o 
                   tipo de análise desejada. Nossa equipe técnica providenciará o documento solicitado.
                 </p>
