@@ -60,7 +60,7 @@ const HeroSlider = () => {
   }, [nextSlide]);
 
   return (
-    <div className="relative h-[500px] md:h-[600px] overflow-hidden">
+    <div className="relative h-[350px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
       {/* Container de slides */}
       <div className="h-full relative">
         {bannerSlides.map((slide, index) => (
@@ -78,20 +78,20 @@ const HeroSlider = () => {
             />
             
             {/* Overlay com conteúdo */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+            <div className="absolute inset-0 bg-black bg-opacity-50 md:bg-opacity-40 flex items-center">
               <div className="container mx-auto px-4">
-                <div className="max-w-xl text-white">
-                  <h2 className="font-heading font-bold text-4xl md:text-5xl mb-4">
+                <div className="max-w-[90%] sm:max-w-[80%] md:max-w-xl text-white mobile-text-fix">
+                  <h2 className="font-heading font-bold text-xl sm:text-2xl md:text-3xl lg:text-5xl mb-1 sm:mb-2 md:mb-4 leading-tight">
                     {slide.title}
                   </h2>
-                  <p className="text-lg mb-6">
+                  <p className="text-sm sm:text-base md:text-lg mb-3 md:mb-6 mobile-text-fix max-w-[90%] md:max-w-full">
                     {slide.description}
                   </p>
                   
                   {/* Links diretos sem depender de JavaScript */}
                   <a 
                     href={slide.buttonLink}
-                    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-6 py-6 rounded-md"
+                    className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-heading font-semibold px-3 py-2 sm:px-4 sm:py-3 md:px-6 md:py-4 text-xs sm:text-sm md:text-base rounded-md"
                   >
                     {slide.buttonText}
                   </a>
@@ -103,11 +103,11 @@ const HeroSlider = () => {
       </div>
       
       {/* Indicadores de slide */}
-      <div className="absolute bottom-5 left-0 right-0 flex justify-center space-x-2">
+      <div className="absolute bottom-4 md:bottom-5 left-0 right-0 flex justify-center space-x-2">
         {bannerSlides.map((_, index) => (
           <button 
             key={index}
-            className={`w-3 h-3 rounded-full transition-all ${
+            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${
               index === currentSlide ? "bg-white" : "bg-white bg-opacity-50"
             }`}
             onClick={() => goToSlide(index)}
@@ -118,19 +118,24 @@ const HeroSlider = () => {
       
       {/* Botões de navegação */}
       <button 
-        className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
+        className="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white bg-opacity-30 hover:bg-opacity-50 md:bg-opacity-50 md:hover:bg-opacity-75 flex items-center justify-center focus:outline-none"
         onClick={prevSlide}
         aria-label="Slide anterior"
       >
-        <ChevronLeft className="h-6 w-6" />
+        <ChevronLeft className="h-4 w-4 md:h-6 md:w-6" />
       </button>
       <button 
-        className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center"
+        className="absolute top-1/2 right-2 md:right-4 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white bg-opacity-30 hover:bg-opacity-50 md:bg-opacity-50 md:hover:bg-opacity-75 flex items-center justify-center focus:outline-none"
         onClick={nextSlide}
         aria-label="Próximo slide"
       >
-        <ChevronRight className="h-6 w-6" />
+        <ChevronRight className="h-4 w-4 md:h-6 md:w-6" />
       </button>
+      
+      {/* Paginação de slide para visualização em telas menores */}
+      <div className="absolute bottom-1 left-0 right-0 text-center text-white text-xs opacity-70 md:hidden">
+        <span>{currentSlide + 1} / {bannerSlides.length}</span>
+      </div>
     </div>
   );
 };

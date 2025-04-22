@@ -117,23 +117,23 @@ export const ProductGallery = ({ productName }: ProductGalleryProps) => {
 
   return (
     <div>
-      <div className="bg-gray-100 rounded-lg overflow-hidden mb-4">
+      <div className="bg-gray-100 rounded-lg overflow-hidden mb-2 md:mb-4 relative">
         <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
           <DialogTrigger asChild>
-            <div className="relative cursor-zoom-in h-[400px]">
+            <div className="relative cursor-zoom-in h-[250px] sm:h-[300px] md:h-[400px]">
               <img 
                 src={productImages[currentImage].src} 
                 alt={productImages[currentImage].alt}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain responsive-image"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-opacity flex items-center justify-center">
+              <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-opacity flex items-center justify-center">
                 <div className="opacity-0 hover:opacity-100 transition-opacity">
-                  <ZoomIn className="text-white h-8 w-8" />
+                  <ZoomIn className="text-white h-5 w-5 md:h-8 md:w-8" />
                 </div>
               </div>
             </div>
           </DialogTrigger>
-          <DialogContent className="max-w-4xl p-0 bg-transparent border-none">
+          <DialogContent className="max-w-[95vw] md:max-w-4xl p-0 bg-transparent border-none">
             <div className="relative w-full">
               <img 
                 src={productImages[lightboxIndex].src} 
@@ -146,10 +146,10 @@ export const ProductGallery = ({ productName }: ProductGalleryProps) => {
                   e.stopPropagation();
                   prevLightboxImage();
                 }}
-                className="absolute top-1/2 left-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center z-10"
+                className="absolute top-1/2 left-1 md:left-4 -translate-y-1/2 w-7 h-7 md:w-10 md:h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center z-10"
                 aria-label="Previous image"
               >
-                <ChevronLeft className="h-6 w-6" />
+                <ChevronLeft className="h-4 w-4 md:h-6 md:w-6" />
               </button>
               
               <button 
@@ -157,32 +157,62 @@ export const ProductGallery = ({ productName }: ProductGalleryProps) => {
                   e.stopPropagation();
                   nextLightboxImage();
                 }}
-                className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center z-10"
+                className="absolute top-1/2 right-1 md:right-4 -translate-y-1/2 w-7 h-7 md:w-10 md:h-10 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center z-10"
                 aria-label="Next image"
               >
-                <ChevronRight className="h-6 w-6" />
+                <ChevronRight className="h-4 w-4 md:h-6 md:w-6" />
               </button>
             </div>
           </DialogContent>
         </Dialog>
+        
+        {/* Direct navigation buttons for main image on mobile */}
+        <button 
+          onClick={prevLightboxImage}
+          className="absolute top-1/2 left-1 -translate-y-1/2 w-6 h-6 md:w-8 md:h-8 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center z-10 md:hidden shadow-sm"
+          aria-label="Previous image"
+        >
+          <ChevronLeft className="h-4 w-4" />
+        </button>
+        
+        <button 
+          onClick={nextLightboxImage}
+          className="absolute top-1/2 right-1 -translate-y-1/2 w-6 h-6 md:w-8 md:h-8 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 flex items-center justify-center z-10 md:hidden shadow-sm"
+          aria-label="Next image"
+        >
+          <ChevronRight className="h-4 w-4" />
+        </button>
       </div>
       
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-4 gap-1 md:gap-2 overflow-x-auto">
         {productImages.map((image, index) => (
           <div 
             key={image.id}
             className={`bg-gray-100 rounded-lg overflow-hidden cursor-pointer transition ${
-              index === currentImage ? 'ring-2 ring-primary' : ''
+              index === currentImage ? 'ring-2 ring-primary' : 'ring-1 ring-gray-200'
             }`}
             onClick={() => handleThumbnailClick(index)}
           >
             <img 
               src={image.thumbnail} 
               alt={image.alt}
-              className="w-full h-24 object-cover"
+              className="w-full h-12 sm:h-16 md:h-20 lg:h-24 object-cover"
             />
           </div>
         ))}
+      </div>
+      
+      {/* Image pagination indicator for mobile */}
+      <div className="flex justify-center mt-2 md:hidden">
+        <div className="flex space-x-1">
+          {productImages.map((_, index) => (
+            <div 
+              key={index} 
+              className={`w-2 h-2 rounded-full ${index === currentImage ? 'bg-primary' : 'bg-gray-300'}`}
+              onClick={() => handleThumbnailClick(index)}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

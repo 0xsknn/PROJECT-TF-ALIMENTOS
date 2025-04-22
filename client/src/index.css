@@ -10,4 +10,36 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
+  
+  /* Ajuste de texto responsivo para dispositivos móveis */
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+  
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold;
+  }
+  
+  p {
+    @apply text-sm md:text-base;
+  }
+}
+
+/* Classes utilitárias para responsividade */
+.mobile-padding {
+  @apply px-4 py-3 md:px-6 md:py-4 lg:px-8;
+}
+
+/* Fixing text overflow on mobile */
+.mobile-text-fix {
+  @apply break-words hyphens-auto;
+}
+
+/* Melhoria para imagens responsivas */
+.responsive-image {
+  @apply w-full h-auto object-cover;
 }

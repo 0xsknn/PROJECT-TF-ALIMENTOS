@@ -15,82 +15,80 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
   const [selectedTab, setSelectedTab] = useState("description");
 
   return (
-    <div className="py-12">
+    <div className="py-8 md:py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           {/* Product Gallery */}
           <ProductGallery productName={product.name} />
           
           {/* Product Information */}
           <div>
-            <div className="mb-8">
+            <div className="mb-6 md:mb-8">
               <div className="flex items-center mb-2">
                 <span className={`${product.isAvailable ? 'bg-yellow-500' : 'bg-red-500'} text-white text-xs px-2 py-1 rounded-full mr-2`}>
                   {product.isAvailable ? 'Disponível' : 'Limitado'}
                 </span>
-                <span className="text-gray-600 text-sm">Código: {product.id}</span>
+                <span className="text-gray-600 text-xs md:text-sm">Código: {product.id}</span>
               </div>
-              <h1 className="font-heading font-bold text-3xl md:text-4xl mb-2">{product.name}</h1>
-              <p className="text-gray-600 mb-4">{product.description}</p>
+              <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl mb-2">{product.name}</h1>
+              <p className="text-gray-600 mb-4 text-sm md:text-base mobile-text-fix">{product.description}</p>
               
-              <div className="flex flex-wrap gap-4 mb-6">
+              <div className="flex flex-wrap gap-3 md:gap-4 mb-5 md:mb-6 text-xs md:text-sm">
                 <div className="flex items-center">
-                  <Award className="text-yellow-500 mr-2 h-5 w-5" />
+                  <Award className="text-yellow-500 mr-1 md:mr-2 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
                   <span>Certificação ISO 22000</span>
                 </div>
                 <div className="flex items-center">
-                  <Truck className="text-yellow-500 mr-2 h-5 w-5" />
+                  <Truck className="text-yellow-500 mr-1 md:mr-2 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
                   <span>Entrega para todo Brasil</span>
                 </div>
               </div>
               
-              <div className="bg-gray-100 rounded-lg p-6 mb-6">
-                <h3 className="font-heading font-semibold text-lg mb-4">Especificações Técnicas</h3>
+              <div className="bg-gray-100 rounded-lg p-3 md:p-6 mb-5 md:mb-6">
+                <h3 className="font-heading font-semibold text-base md:text-lg mb-3 md:mb-4">Especificações Técnicas</h3>
                 <div className="overflow-x-auto">
-                  <table className="w-full">
+                  <table className="w-full text-xs md:text-sm">
                     <tbody>
                       <tr className="border-b border-gray-300">
-                        <td className="py-2 font-semibold">Classificação</td>
-                        <td className="py-2">{product.category === 'soja' ? 'Soja Grão, Não Transgênica' : product.category === 'milho' ? 'Milho Amarelo, Tipo 1' : 'Tipo 1, Longo Fino'}</td>
+                        <td className="py-1.5 md:py-2 font-semibold">Classificação</td>
+                        <td className="py-1.5 md:py-2">{product.category === 'soja' ? 'Soja Grão, Não Transgênica' : product.category === 'milho' ? 'Milho Amarelo, Tipo 1' : 'Tipo 1, Longo Fino'}</td>
                       </tr>
                       <tr className="border-b border-gray-300">
-                        <td className="py-2 font-semibold">Umidade</td>
-                        <td className="py-2">{product.moisture || "N/A"}</td>
+                        <td className="py-1.5 md:py-2 font-semibold">Umidade</td>
+                        <td className="py-1.5 md:py-2">{product.moisture || "N/A"}</td>
                       </tr>
                       <tr className="border-b border-gray-300">
-                        <td className="py-2 font-semibold">Impureza</td>
-                        <td className="py-2">{product.impurity || "N/A"}</td>
+                        <td className="py-1.5 md:py-2 font-semibold">Impureza</td>
+                        <td className="py-1.5 md:py-2">{product.impurity || "N/A"}</td>
                       </tr>
                       <tr className="border-b border-gray-300">
-                        <td className="py-2 font-semibold">Rendimento</td>
-                        <td className="py-2">95%</td>
+                        <td className="py-1.5 md:py-2 font-semibold">Rendimento</td>
+                        <td className="py-1.5 md:py-2">95%</td>
                       </tr>
                       <tr className="border-b border-gray-300">
-                        <td className="py-2 font-semibold">Grãos quebrados</td>
-                        <td className="py-2">&lt; 2%</td>
+                        <td className="py-1.5 md:py-2 font-semibold">Grãos quebrados</td>
+                        <td className="py-1.5 md:py-2">&lt; 2%</td>
                       </tr>
                       <tr>
-                        <td className="py-2 font-semibold">PH</td>
-                        <td className="py-2">{product.ph || "N/A"}</td>
+                        <td className="py-1.5 md:py-2 font-semibold">PH</td>
+                        <td className="py-1.5 md:py-2">{product.ph || "N/A"}</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
               
-
-              
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <Link href="/contato">
-                  <Button className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3 h-auto">
+                  <Button className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white font-heading font-semibold text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 h-auto">
                     Solicitar Cotação
                   </Button>
                 </Link>
                 <Button 
                   variant="outline" 
-                  className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white font-heading font-semibold px-6 py-3 h-auto"
+                  className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white font-heading font-semibold text-xs md:text-sm px-4 py-2 md:px-6 md:py-3 h-auto"
                 >
-                  <Download className="mr-2 h-4 w-4" /> Baixar Laudo Técnico
+                  <Download className="mr-1 md:mr-2 h-3 w-3 md:h-4 md:w-4" /> Baixar Laudo Técnico
                 </Button>
               </div>
             </div>
@@ -98,24 +96,24 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
         </div>
         
         {/* Product Description Tabs */}
-        <div className="mt-12">
+        <div className="mt-8 md:mt-12">
           <Tabs defaultValue="description" onValueChange={setSelectedTab}>
-            <TabsList className="border-b border-gray-300 w-full justify-start">
+            <TabsList className="border-b border-gray-300 w-full justify-start overflow-x-auto flex-nowrap bg-transparent gap-0 md:gap-2 h-auto p-0">
               <TabsTrigger 
                 value="description" 
-                className={`${selectedTab === 'description' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-4 py-2 mr-4`}
+                className={`${selectedTab === 'description' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-2 py-2 mr-1 md:px-4 md:mr-4 text-xs md:text-sm lg:text-base h-auto data-[state=active]:bg-transparent`}
               >
                 Descrição
               </TabsTrigger>
               <TabsTrigger 
                 value="certifications" 
-                className={`${selectedTab === 'certifications' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-4 py-2 mr-4`}
+                className={`${selectedTab === 'certifications' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-2 py-2 mr-1 md:px-4 md:mr-4 text-xs md:text-sm lg:text-base whitespace-nowrap h-auto data-[state=active]:bg-transparent`}
               >
                 Certificações
               </TabsTrigger>
               <TabsTrigger 
                 value="applications" 
-                className={`${selectedTab === 'applications' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-4 py-2`}
+                className={`${selectedTab === 'applications' ? 'text-primary border-b-2 border-primary' : 'text-gray-600'} font-heading font-semibold px-2 py-2 text-xs md:text-sm lg:text-base md:px-4 h-auto data-[state=active]:bg-transparent`}
               >
                 Aplicações
               </TabsTrigger>
@@ -123,9 +121,9 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
             
             <div className="py-6">
               <TabsContent value="description">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                  <div className="lg:col-span-2">
-                    <h3 className="font-heading font-semibold text-xl mb-4">Sobre o Produto</h3>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+                  <div className="lg:col-span-2 mobile-text-fix">
+                    <h3 className="font-heading font-semibold text-lg md:text-xl mb-3 md:mb-4">Sobre o Produto</h3>
                     {product.category === 'soja' ? (
                       <>
                         <p className="mb-4">
@@ -179,75 +177,75 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                   </div>
                   
                   <div>
-                    <h3 className="font-heading font-semibold text-xl mb-4">Destaques</h3>
-                    <ul className="space-y-3">
+                    <h3 className="font-heading font-semibold text-base md:text-lg lg:text-xl mb-2 md:mb-3 lg:mb-4">Destaques</h3>
+                    <ul className="space-y-2 md:space-y-3">
                       {product.category === 'soja' ? (
                         <>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Soja não transgênica certificada</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Soja não transgênica certificada</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Alto teor de proteínas e nutrientes</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Alto teor de proteínas e nutrientes</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Baixo índice de impurezas</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Baixo índice de impurezas</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Rastreabilidade completa da produção</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Rastreabilidade completa da produção</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Produção com práticas agrícolas sustentáveis</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Produção com práticas agrícolas sustentáveis</span>
                           </li>
                         </>
                       ) : product.category === 'milho' ? (
                         <>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Grãos uniformes e selecionados</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Grãos uniformes e selecionados</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Alto valor nutritivo e energético</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Alto valor nutritivo e energético</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Baixo índice de micotoxinas</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Baixo índice de micotoxinas</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Rastreabilidade completa da produção</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Rastreabilidade completa da produção</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Produção com práticas agrícolas sustentáveis</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Produção com práticas agrícolas sustentáveis</span>
                           </li>
                         </>
                       ) : (
                         <>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Alta qualidade de grãos integrais</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Alta qualidade de grãos integrais</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Baixo índice de impurezas</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Baixo índice de impurezas</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Excelente para armazenamento prolongado</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Excelente para armazenamento prolongado</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Rastreabilidade completa da produção</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Rastreabilidade completa da produção</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-primary mr-2 mt-1 h-5 w-5" />
-                            <span>Produção com práticas agrícolas sustentáveis</span>
+                            <Check className="text-primary mr-1.5 md:mr-2 mt-0.5 md:mt-1 h-4 w-4 md:h-5 md:w-5 flex-shrink-0" />
+                            <span className="text-sm md:text-base mobile-text-fix">Produção com práticas agrícolas sustentáveis</span>
                           </li>
                         </>
                       )}
@@ -257,19 +255,19 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
               </TabsContent>
               
               <TabsContent value="certifications">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="bg-gray-100 rounded-lg p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                  <div className="bg-gray-100 rounded-lg p-4 md:p-6">
                     <div className="flex items-start">
-                      <div className="flex-shrink-0 mr-4 h-20 w-20 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-16 h-16 text-primary">
+                      <div className="flex-shrink-0 mr-3 md:mr-4 h-16 w-16 md:h-20 md:w-20 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 md:w-16 md:h-16 text-primary">
                           <path d="M12 2L4 10l8 8 8-8-8-8z" />
                           <path d="M4 22h16" />
                           <path d="M12 18v4" />
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-heading font-semibold text-lg mb-2">ISO 22000</h4>
-                        <p className="text-gray-600">
+                        <h4 className="font-heading font-semibold text-base md:text-lg mb-1 md:mb-2">ISO 22000</h4>
+                        <p className="text-gray-600 text-sm md:text-base mobile-text-fix">
                           Certificação internacional que garante que nosso sistema de gestão de segurança de alimentos 
                           atende aos padrões globais, assegurando produtos seguros para consumo.
                         </p>
@@ -338,8 +336,8 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
               </TabsContent>
               
               <TabsContent value="applications">
-                <h3 className="font-heading font-semibold text-xl mb-4">Aplicações e Usos</h3>
-                <p className="mb-6">
+                <h3 className="font-heading font-semibold text-lg md:text-xl mb-3 md:mb-4">Aplicações e Usos</h3>
+                <p className="mb-4 md:mb-6 text-sm md:text-base mobile-text-fix">
                   {product.category === 'soja' ? 
                     'A soja em grão é versátil e pode ser utilizada em diversas aplicações na indústria alimentícia e outros setores:' : 
                   product.category === 'milho' ?
@@ -347,7 +345,7 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
                     'O arroz com casca é versátil e pode ser utilizado em diversas aplicações na indústria alimentícia após processamento:'}
                 </p>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                   <div className="bg-gray-100 rounded-lg p-6">
                     <div className="text-primary text-3xl mb-3">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-10 h-10 text-primary">
@@ -446,10 +444,10 @@ const ProductDetails = ({ product, relatedProducts }: ProductDetailsProps) => {
         
         {/* Related Products */}
         {relatedProducts.length > 0 && (
-          <div className="mt-16">
-            <h2 className="font-heading font-bold text-2xl md:text-3xl mb-6">Produtos Relacionados</h2>
+          <div className="mt-10 md:mt-16">
+            <h2 className="font-heading font-bold text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6">Produtos Relacionados</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {relatedProducts.map((relatedProduct) => (
                 <div 
                   key={relatedProduct.id}

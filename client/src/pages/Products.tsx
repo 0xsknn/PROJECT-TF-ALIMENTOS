@@ -34,12 +34,12 @@ const Products = () => {
         ]}
       />
 
-      <div className="container mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h1 className="font-heading font-bold text-3xl md:text-5xl mb-4">
+      <div className="container mx-auto px-4 py-8 md:py-16">
+        <div className="text-center mb-8 md:mb-12">
+          <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-5xl mb-3 md:mb-4">
             Nossos Produtos
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
             Conheça nossa linha de grãos de alta qualidade, desenvolvidos com os mais rigorosos padrões de cultivo e processamento.
           </p>
         </div>
@@ -62,29 +62,29 @@ const Products = () => {
             <p className="text-red-500">Erro ao carregar produtos. Por favor, tente novamente.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {products?.map((product) => (
               <Card key={product.id} className="overflow-hidden transition-all hover:shadow-lg">
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-52 md:h-64 overflow-hidden">
                   <img
                     src={productImages[product.slug] || ""}
                     alt={product.name}
                     className="w-full h-full object-cover transition-transform hover:scale-105"
                   />
                 </div>
-                <CardContent className="p-6">
-                  <h2 className="font-heading font-bold text-2xl mb-3">{product.name}</h2>
-                  <p className="text-gray-600 mb-4 line-clamp-3">
+                <CardContent className="p-4 md:p-6">
+                  <h2 className="font-heading font-bold text-xl md:text-2xl mb-2 md:mb-3">{product.name}</h2>
+                  <p className="text-gray-600 mb-3 md:mb-4 line-clamp-3 text-sm md:text-base mobile-text-fix">
                     {product.shortDescription}
                   </p>
-                  <div className="flex justify-between items-center mt-4">
+                  <div className="flex justify-between items-center mt-3 md:mt-4">
                     <Button 
                       asChild
                       variant="outline" 
-                      className="border-primary text-primary hover:bg-primary hover:text-white"
+                      className="border-primary text-primary hover:bg-primary hover:text-white text-sm md:text-base w-full justify-center"
                     >
                       <Link href={`/produtos/${product.slug}`}>
-                        Ver Detalhes <ArrowRight className="ml-2 h-4 w-4" />
+                        Ver Detalhes <ArrowRight className="ml-1 md:ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </div>
@@ -94,10 +94,10 @@ const Products = () => {
           </div>
         )}
 
-        <div className="mt-16 bg-gray-100 rounded-lg p-8">
-          <div className="text-center mb-6">
-            <h2 className="font-heading font-bold text-2xl">Precisa de Informações Específicas?</h2>
-            <p className="text-gray-600 mt-2">
+        <div className="mt-10 md:mt-16 bg-gray-100 rounded-lg p-5 md:p-8">
+          <div className="text-center mb-4 md:mb-6">
+            <h2 className="font-heading font-bold text-xl md:text-2xl">Precisa de Informações Específicas?</h2>
+            <p className="text-gray-600 mt-2 text-sm md:text-base mobile-text-fix">
               Nossa equipe técnica está à disposição para fornecer informações detalhadas sobre 
               especificações, disponibilidade e aplicações dos nossos produtos.
             </p>
@@ -105,7 +105,7 @@ const Products = () => {
           <div className="flex justify-center">
             <Button 
               asChild
-              className="bg-primary hover:bg-primary/90"
+              className="bg-primary hover:bg-primary/90 text-sm md:text-base px-4 py-2 md:px-6 md:py-3 h-auto"
             >
               <Link href="/contato">
                 Fale com um Especialista

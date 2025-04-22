@@ -5,27 +5,27 @@ import { certifications } from "@/data/certifications";
 
 const QualityCertification = () => {
   return (
-    <section className="py-16">
+    <section className="py-8 md:py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
-            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">
+            <h2 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl mb-3 md:mb-4">
               Certificações de Qualidade
             </h2>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-4 md:mb-6 text-sm md:text-base mobile-text-fix">
               Na TF Alimentos, a qualidade não é apenas uma promessa, é uma garantia respaldada por rigorosos 
               processos de certificação. Nossos produtos atendem aos mais elevados padrões nacionais e internacionais.
             </p>
             
-            <div className="space-y-4 mb-6">
+            <div className="space-y-3 md:space-y-4 mb-5 md:mb-6">
               {certifications.slice(0, 3).map((cert) => (
                 <div key={cert.id} className="flex items-start">
-                  <div className="text-primary mr-3 mt-1">
-                    <Check className="h-6 w-6" />
+                  <div className="text-primary mr-2 md:mr-3 mt-1 flex-shrink-0">
+                    <Check className="h-5 w-5 md:h-6 md:w-6" />
                   </div>
                   <div>
-                    <h3 className="font-heading font-semibold text-lg">{cert.name}</h3>
-                    <p className="text-gray-600">{cert.description}</p>
+                    <h3 className="font-heading font-semibold text-base md:text-lg">{cert.name}</h3>
+                    <p className="text-gray-600 text-sm md:text-base mobile-text-fix">{cert.description}</p>
                   </div>
                 </div>
               ))}
@@ -33,20 +33,20 @@ const QualityCertification = () => {
             
             <Link href="/qualidade/certificacoes">
               <Button 
-                className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-6 h-auto"
+                className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold text-sm md:text-base px-4 py-3 md:px-6 md:py-4 h-auto"
               >
                 Saiba Mais
               </Button>
             </Link>
           </div>
           
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-3 md:gap-6 mt-6 lg:mt-0">
             {certifications.slice(0, 4).map((cert) => (
-              <div key={cert.id} className="bg-gray-100 p-8 rounded-lg flex flex-col items-center justify-center">
-                <div className="h-20 w-20 flex items-center justify-center mb-4">
+              <div key={cert.id} className="bg-gray-100 p-4 md:p-6 lg:p-8 rounded-lg flex flex-col items-center justify-center">
+                <div className="h-14 w-14 md:h-20 md:w-20 flex items-center justify-center mb-2 md:mb-4">
                   {cert.icon}
                 </div>
-                <h4 className="font-heading font-semibold text-center">{cert.shortName}</h4>
+                <h4 className="font-heading font-semibold text-center text-sm md:text-base">{cert.shortName}</h4>
               </div>
             ))}
           </div>
