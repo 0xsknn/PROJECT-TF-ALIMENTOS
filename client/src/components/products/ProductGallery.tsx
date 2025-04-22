@@ -35,9 +35,9 @@ const productImagesMap: Record<ProductCategory, ProductImage[]> = {
   soja: [
     {
       id: 1,
-      src: "/images/sojacard.webp",
-      thumbnail: "/images/sojacard.webp",
-      alt: "Soja Grão - Nas Mãos sobre Saca"
+      src: "/images/1maosoja.png",
+      thumbnail: "/images/1maosoja.png",
+      alt: "Soja Grão - Detalhe na Mão"
     },
     {
       id: 2,
